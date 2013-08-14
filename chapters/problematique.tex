@@ -1,0 +1,101 @@
+\subsection{Sujet et objectifs initiaux}
+	Dans ce stage, nous allons nous intéresser à l’adaptation de la difficulté dans un jeu à but thérapeutique sous contrôle d’un médecin. Les variables permettant d’ajuster la difficulté d’un jeu sont nombreuses et variées. Elles peuvent être facilement modifiées et combinées pour créer des objectifs de jeu. Cependant, ces objectifs de jeu n’ont pas nécessairement un sens pour le médecin. Il s’agira dans ce stage de définir avec un thérapeute les variables ou paramètres adaptées à l’adaptation de la difficulté pour le soignant.
+	\paragraph{}
+	Dans le cadre de ce stage, le stagiaire aura pour mission de:
+	\begin{itemize}
+		\item {récupérer auprès d’un soignant une liste exhaustive d’objectifs de jeu thérapeutique}
+		\item {traduire ces objectifs en paramètres dans le jeu Hammer \& Planks}
+		\item {proposer une solution pour suivre et analyser visuellement les progrès du patient relativement aux objectifs fixés par le soignant}
+	\end{itemize}
+	Le stagiaire devra participer à des séances de coconception avec un thérapeute et sera amené à se déplacer pour suivre des séances de tests auprès de patients.
+		
+\subsection{Contexte et besoins}
+Lors de mon arrivée au sein de NaturalPad, il existant déjà une version existante du jeu Hammer \& Planks, outil dans lequel devait s'insérer mon travail. Présenté lors du MIG 2012, le jeu avait depuis, peu évolué et était encore surtout orienté grand public. Ma première mission fut donc de m'approprier l'application et de l'adapter pour une utilisation paramétrable dans un contexte thérapeutique. En effet, une utilisation thérapeutique implique d'ajuster les différents paramètres en fonction des capacités et des besoins du patient.
+
+	\paragraph{}Les échanges avec les professionnels de la santé ont été au coeur de mon stage. La compréhension des besoins et des contraintes médicales étant primordiales pour proposer un produit adapté, je me suis naturellement tourné vers les thérapeutes et soignants pour acquérir les connaissances et le background qu'il me manquait. Il m'est par ailleurs rapidement apparu qu'on ne pouvait répondre aux différents besoins thérapeutiques explicités par les soignants avec un seul jeu vidéo, même paramétrable. C'est pourquoi je me suis aussi concentré sur l'aspect de conception avec les thérapeutes. 
+
+	\paragraph{Orientation du travail de stage \\}
+Rappelons que la société NaturalPad propose comme outil une plateforme web permettant d'accéder à des jeux sérieux, et de les paramétrer directement depuis celle-ci. Hammer \& Planks constitue ainsi le premier jeu accessible depuis cette plateforme et, bien que servant d'exemple des possibilités d'un jeu vidéo pour la santé, il est amené à être rejoint par d'autres serious games. C'est dans cette optique et par la constation précédente sur le besoin d'une plus grande diversité de jeux pour répondre aux différents besoin, que mon travail durant ce stage s'est finalement orienté directement vers une méthode de conception de serious game pour la santé. Cela dans le but d'adapter au mieux la réponse proposée aux différents besoins et contraintes tels que les objectifs thérapeutiques, la pathologie du patient, ses capacités, son âge et sa maitrise des nouvelles technologie ou son aisance avec les jeux vidéo par exemple.
+
+\subsection{Background}
+	\subsubsection{Jeux sérieux}
+Les jeux vidéo se révèlent être un outil dont l’impact peut dépasser la simple portée ludique. Les serious games se proposent de profiter du ressort ludique du jeu vidéo pour servir volontairement un objectif sérieux distinct. Jeux éducationnels, commerciaux, idéologiques ou d’entraînement font partie de cette famille des jeux sérieux. D’un point de vue thérapeutique, il est possible de les utiliser afin de rendre le travail de réhabilitation ou de remise en forme plus motivant pour le patient en combinant les aspects ludique et thérapeutique.
+
+	\subsubsection{Méthodologies de conception}
+On peut naïvement imaginer deux approches de conception s’opposant dans la conception des jeux sérieux. La première consisterait, de partir des objectifs sérieux et de proposer une “gamification” de ceux-ci en ajoutant des éléments de jeu. La seconde, à l’inverse, serait de partir de la composante ludique du jeu pour y intégrer ensuite le contenu sérieux. Bien qu’ayant l’avantage d’être simples à concevoir, ces deux démarches ont pour limite d’avantager l’une ou l’autre des composantes. Un jeu sérieux conçu à partir d’une base ludique aurait un impact sérieux limité, alors que l’ajout d’une composante ludique à une finalité sérieuse serait peu  convaincant.
+Une troisième approche est donc de prendre en considération à la fois la composante ludique et l’intention sérieuse dès le début du processus de conception pour les fusionner au mieux. Si elle est correctement mise en place, cette approche promet une forte utilisation du jeu et un impact sérieux efficace. Elle présente néanmoins le défaut de devoir imaginer une nouvelle solution pour tout nouveau couple (jeu, objectif sérieux). C’est ce type d’approche que nous proposons ici, et nous verrons comment les résultats peuvent être réemployables.
+
+	\subsubsection{Jeux sérieux thérapeutiques}
+Dans notre contexte, l’aspect sérieux recherché du jeu est la réhabilitation motrice ou la rééducation physique du joueur. Ces objectifs sont indiqués par des thérapeutes, médecins ou kinés, notamment dans le cadre de réhabilitation de personnes hémiplégiques ou souffrant de douleurs lombaires. L’intérêt du jeu vidéo est alors de proposer un environnement de réhabilitation plus agréable et de faciliter l’acceptation des travaux de rééducation par le patient grâce aux éléments de gameplay. Le jeu peut permettre un plus grand volume de travail de la part du patient car celui-ci sera plus enclin à les réaliser dans le cadre du jeu sérieux. L’objectif à terme est donc d’améliorer les résultats de l’objectif thérapeutique.
+
+\subsection{Outils et méthodologie}
+	\subsubsection{Méthodologie}
+Afin de mener à bien ses projets, l’équipe de NaturalPad emploie une méthode Agile de gestion de projet : SCRUM.
+Celle-ci définit 3 rôles :
+	\begin{itemize}
+		\item Le Product Owner
+		\item Le Scrum Master
+		\item Le Développeur
+	\end {itemize}
+Le Product Owner est le représentant des clients et des utilisateurs. Son objectif est de maximiser la valeur du produit développé. Il a pour rôle de rédiger des User Stories (comparables à des cas d'utilisation) et de valider le travail des développeurs. 
+\\Le ScrumMaster est le responsable de la méthode. Il doit s’assurer qu’elle est correctement mise en application et comprise par les développeurs. Il organise le «Daily Scrum» (voir définition plus bas).
+\\Enfin, le Développeur est une équipe pluridisciplinaire et auto-organisée : toutes les décisions sont prises ensemble, sans hiérarchie externe ni interne.
+ 
+		\paragraph{Daily Scrum :}
+Il s’agit d’une réunion quotidienne ayant pour but de faire un point sur la coordination entre les tâches et les difficultés rencontrées.  Trois questions sont posées aux développeurs : 
+	\begin{itemize}
+		\item Qu’as-tu fais hier ?
+		\item Qu’est-ce que tu vas faire aujourd’hui ?
+		\item Est-ce que tu as rencontré des difficultés ?
+	\end {itemize}
+	
+\paragraph{}Le travail est organisé sous forme de sprint. Il s’agit d’une courte période (au maximum un mois) au bout de laquelle l’équipe doit fournir une version améliorée du produit. Chaque sprint possède un but (ex : «on doit pouvoir envoyer des paramètres au jeu») et une liste de tâches (ex : «déterminer la méthode de communication, etc...»). Dès la fin d’un sprint, un nouveau est lancé.
+
+\paragraph{}Enfin, une réunion a lieu en fin de sprint pour faire le point sur le travail accompli, les erreurs rencontrées et comment ne pas les éviter à l'avenir, ainsi que lancer le sprint suivant. Cette méthode est très intéressante car elle permet vraiment de garder une cohésion dans l’équipe de développement et d’avancer de manière visible. 
+
+	\subsubsection{Outils}
+		\paragraph{Gestion de projet\\}
+Lors de mon arrivée dans l'entreprise, l’équipe utilisait Redmine, une application web de gestion de projets. Nous avons cependant changé deux fois d'outils de gestion de projet pendant la période de ce stage. Le premier est intervenu car les mises à jour des tâches dans Redmine étaient longues et l'outil finalement peu approprié à une méthodologie AGILE, ce qui freinait son utilisation. Nous avons donc mis en place une méthode Kanban qui consiste à écrire chaque tâche sur un post-it, et de déplacer ce post-it dans des colonnes «A faire», «En cours», «Terminé» ou «Validé» selon son avancement par exemple. De cette manière, l’avancement global était bien plus visible mais cette solution était finalement gourmande en post-it et en place. C'est pourquoi, nous utilisons désormais \href{www.trello.com}{Trello}, un outil de gestion de projet en ligne, se basant sur la méthode Kanban. Il s’agit d’un tableau virtuel dans lequel nous pouvons facilement déplacer les tâches, ajouter des commentaires ou des contraintes de temps notament.
+
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[height=48px]{images/redmine.jpg}
+		\includegraphics[height=48px]{images/trello.jpg}
+		\caption{Logos de Redmine et Trello}
+		\label{Logos de Redmine et Trello}
+	\end{figure}
+
+		\paragraph{Développement}		
+		\subparagraph{} \emph{Unity3D\\}
+La majeure partie technique de mon travail a été réalisée pour Hammer \& Planks, qui est développé avec le moteur de jeu Unity3D. Au fil de mon stage, nous sommes passés de la version 3.9 à la version 4.1. Unity permet de facilement intégrer les modèles 3D des objets réalisés dans les logiciels de modélisation 3D tels que Photoshop, Gimp ou Maya. Il propose aussi des options permettant d'utiliser un gestionnaire de versions pour les fichiers du projet.
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[height=48px]{images/unity.jpg}
+		\caption{Logo d'Unity3d}
+		\label{Logo d'Unity3d}
+	\end{figure}
+
+		\subparagraph{} \emph{Git\\}
+Que ce soit pour Hammer \& Planks ou nos autres projets en cours, l'utilisation d'un gestionnaire de versions se révèle vite indispensable. Travaillant en équipe allant jusqu'à cinq développeur et une graphiste, il est nécessaire de pouvoir mutualiser le travail. De plus, l'expérimentation et le développement de nouveaux éléments se prête très bien à l'utilisation de plusieurs branches de développement, chose que Git permet de gérer facilement.
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[height=48px]{images/git.png}
+		\caption{Logo de Git}
+		\label{Logo de Git}
+	\end{figure}
+
+		\subparagraph{}	\emph{BitBucket et GitHub}
+Pour héberger ses projets, NaturalPad avait l'habitude d'utiliser GitHub. Avec l'arrivée de nouveaux stagiaires, il nous a fallu trouver une solution permettant un accès privé au dépot pour un plus grand nombre de personnes, ce que permet BitBucket.
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[height=48px]{images/bitbucket.jpg}
+		\includegraphics[height=48px]{images/github.jpg}
+		\caption{Logos de BitBucket et Github}
+		\label{Logos de BitBucket et Github}
+	\end{figure}
+
+	\subsubsection{Veille}
+Le Jeu Vidéo et plus généralement l'Informatique est un domaine en constante évolution dans lequel il est nécessaire de se tenir à jour pour connaître les dernières technologies et actualités. Pour cela, j'ai observé durant l'intégralité de ma période de stage une veille technologique et stratégique. Nouveautés technologiques, logiques ou matérielles, communications d'entreprises ou de salons nationaux et internationaux ou bien encore annonces de sociétés dont le secteur d'activité est compatible avec NaturalPad ont donc été au coeur de mon étude quotidienne.
+\paragraph{}Pour faciliter ce travail de veille, par ailleurs inclu dans mon planning, j'utilise un agrégateur de flux RSS, outil indispensable pour gérer aisément un contenu important sur un grand nombre de sources différentes. Il s'agit ensuite de mettre à jour et d'étendre régulièrement les sources en fonction de l'utilité observée de chacune d'entre elle ou des manques ressentis.
+\paragraph{Jeux Vidéo\\ \quad}
+Étant étudiant en Informatique, option Image Game and Intelligent Agents, et ayant orienté ma formation vers une spécialité Jeux Vidéo, il m'a semblé important de me tenir à jour en terme d'actualité vidéoludique. J'ai pour cela étendu ma veille aux domaines des jeux vidéo, indépendants ou blockbusters, afin d'en étudier différents aspects tels le buiseness model, le gameplay, les technologies employées ou les mécanismes de jeu innovants par exemple.
