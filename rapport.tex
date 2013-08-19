@@ -16,6 +16,7 @@
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
 \usepackage{graphicx} % support the \includegraphics command and options
 \usepackage[colorlinks=true]{hyperref} % permet l'utilisation d'hyperliens, et active leur coloration ( a definir)
+\usepackage{pdfpages} %% permet d'importe des pages pdf
 \usepackage[francais]{babel}
 \usepackage{glossary}
 
@@ -85,6 +86,7 @@
 \newpage
 \tableofcontents
 
+\newpage
 \listoffigures
 \definecolor{red}{rgb}{1,0,0}
 
@@ -118,11 +120,21 @@
 	\newpage
 	\section{Conclusion}
 	\input{chapters/conclusion}
+	
+	\newpage
+	\section{Bibliographie et sources}
+	\bibliography{rapport}
 
+\newpage
 \part{Annexes} \appendix
+	\section{Les différents types 'classiques' de Jeux Vidéo}
+	\includepdf[pages=-]{chapters/types_jeux_video} %inclusion de toutes les pages du pdf
+	
 	\section{Gamejam 1}
 	\input{chapters/gamejam_one}
 	
 	\section{Gamejam 2}
 	\input{chapters/gamejam_two}
+
+Voir dans quelle mesure il peut être intéressant de mettre mes comptes rendus d'entretien. Dans des annexes séparées éventuellement.
 \end{document}
