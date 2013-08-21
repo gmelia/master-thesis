@@ -47,8 +47,9 @@
 \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
 
-\makeglossary
 \input{glossaire}
+\makeglossary
+
 
 
 \title{Rapport de stage}
@@ -103,7 +104,13 @@
 	
 	\newpage
 	\section{État de l'art}
-	\input{chapters/state_of_the_art}
+	\input{chapters/state_of_the_art/jeux_video}
+	\input{chapters/state_of_the_art/serious_games}
+	\input{chapters/state_of_the_art/difficulte}
+	\input{chapters/state_of_the_art/rehabilitation}
+	\input{chapters/state_of_the_art/nui}
+	\input{chapters/state_of_the_art/conception}
+
 	
 	\newpage
 	\section{Proposition}
@@ -122,7 +129,10 @@
 	\input{chapters/conclusion}
 	
 	\newpage
-	\section{Bibliographie et sources}
+	\printglossary
+%	\addcontentsline{toc}{chapter}{Glossary}
+
+	\newpage
 	\bibliography{rapport}
 
 \newpage
