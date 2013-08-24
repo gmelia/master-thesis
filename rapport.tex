@@ -18,7 +18,7 @@
 \usepackage[colorlinks=true]{hyperref} % permet l'utilisation d'hyperliens, et active leur coloration ( a definir)
 \usepackage{pdfpages} %% permet d'importe des pages pdf
 \usepackage[francais]{babel}
-\usepackage{glossary}
+%\usepackage{glossary}
 
 %COULEURS
 \usepackage{color} % permet de définir des couleurs pour les utiliser localement
@@ -47,8 +47,8 @@
 \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
 
-\input{glossaire}
-\makeglossary
+%\input{glossaire}
+%\makeglossary
 
 
 
@@ -92,7 +92,7 @@
 \definecolor{red}{rgb}{1,0,0}
 
 \newpage 
-\printglossary
+%\printglossary
 
 \part{Rapport de stage}
 	\section{Introduction}
@@ -107,9 +107,10 @@
 	\input{chapters/state_of_the_art/jeux_video}
 	\input{chapters/state_of_the_art/serious_games}
 	\input{chapters/state_of_the_art/difficulte}
-	\input{chapters/state_of_the_art/recommandation}
 	\input{chapters/state_of_the_art/rehabilitation}
-	\input{chapters/state_of_the_art/nui}
+	\input{chapters/state_of_the_art/rehabilitation_et_serious_games}
+%	\input{chapters/state_of_the_art/nui}
+	\input{chapters/state_of_the_art/recommandation}
 	\input{chapters/state_of_the_art/conception}
 
 	
@@ -130,7 +131,7 @@
 	\input{chapters/conclusion}
 	
 	\newpage
-	\printglossary
+	%\printglossary
 %	\addcontentsline{toc}{chapter}{Glossary}
 
 	\newpage
