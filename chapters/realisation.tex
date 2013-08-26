@@ -1,3 +1,52 @@
+\subsection{Interface thérapeutique pour l'ajustement de la difficulté de serious games}	
+\emph{Hammer \& Planks} est, dans sa version thérapeutique, un jeu permettant d'aider à récupérer des facultés motrices dans le cadre d'un accompagnement à la rééducation. Rappelons qu'il s'agit d'un shooter à défilement vertical dans lequel le joueur contrôle un bateau qu'il dirige avec des mouvements du corps. Le joueur doit éviter des obstacles, affronter divers ennemis et ramasser des bonus sur la mer. Tous ces objets possèdent des attributs qu'il est possible de modifier afin d'adapter le jeu aux besoins et aux capacités du patient. Ce fut mon travail durant la première partie de mon stage de permettre de modifier ces paramètres directement à partir d'une interface web contrôlée par le soignant menant la séance de thérapie.
+\paragraph{}
+Ce projet se divise en deux parties distinctes~:
+\begin{enumerate}
+	\item L'interface thérapeutique
+	\item La paramétrisation des variables de jeu
+\end{enumerate}
+
+	\subsubsection*{Interface thérapeutique}
+Celle-ci permet, à partir d'un terminal distinct, de choisir un jeu et de lancer une partie sur le terminal utilisé par le patient. Ce dernier sera équipé d'un périphérique de contrôle comme la caméra Kinect ou la wii board. A partir de cette interface, le soignant est en mesure de voir et de modifier l'ensemble des paramètres de jeu (en tout cas, le sous-ensemble considéré comme pertinent et effectivement envoyé à l'application). De plus, à la fin d'une partie, il sera capable de visualiser les données de la session de jeu, comme l'apparition d'évènements ou les zones que le joueur a réussi ou non à atteindre. Ces informations sont utiles pour mieux cibler les difficultés du patient et ajuster au mieux les prochaines séances. Cette partie du projet a été réalisé par Andy Camicci durant son stage chez NaturalPad entre Avril et Juin 2013.
+
+\begin{figure}[htbp]
+	\centering
+%	\includegraphics[scale=]{images/interface_therapeutique_01.png}
+	\caption{TODO Modification des valeurs du jeu dans l'interface thérapeutique}
+	\label{interface_therapeutique_01}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+%	\includegraphics[scale=]{images/interface_therapeutique_02.png}
+	\caption{TODO Visualisation des données de la partie.}
+	\label{interface_therapeutique_02}
+\end{figure}
+
+	\subsubsection*{Maitriser la difficulté : la paramétrisation des variables de jeu}
+Cette partie consiste en l'extraction des paramètres de jeux et en la création d'un système permettant de créer, d'enregistrer et de transmettre des configurations de ces attributs à l'interface thérapeutique.
+
+\paragraph{}
+\emph{Hammer \& Planks} est développé avec le moteur de jeu Unity3d et les scripts codés avec le langage de programmation C\#. Comme nous l'avons dit, H\&P possède de nombreux contenus contribuant à la richesse du gameplay et aux possibilités d'ajustement. Lors de mon arrivée au sein de NaturalPad, ces objets n'étaient cependant pas ajustables facilement : il fallait rechercher l'ensemble des objets dont on souhaitait modifier un paramètre, trouver les variables correspondant à ces paramètres puis les modifier soit directement dans le code soit par l'intermédiaire de l'éditeur d'Unity. La raison en est que les contraintes de développement du jeu n'ont pas permis d'extraire ces informations.
+
+\paragraph{}
+Mon premier travail a donc été de découvrir le code et de rechercher toutes les variables dont on souhaiterait potentiellement vouloir modifier la valeur dans un contexte d'ajustement du jeu pour un exercice de rééducation. J'ai ensuite créé une classe spécifique permettant de regrouper conceptuellement les données modifiables. J'ai ainsi regroupé ces données dans des thèmes tels que \emph{réseau}, \emph{ennemis}, \emph{joueur}, \emph{contrôles} ou \emph{cosmétiques}.
+
+\paragraph{}
+En parallèle, j'ai aussi procédé au refactoring de l'ensemble des classes possédant ou utilisant un ou plusieurs attributs modifiables. L'intérêt était bien sur d'avoir un accès commun unique à ces valeurs, mais aussi et surtout que les valeurs puissent être modifiées de manière extérieure par l'interface thérapeutique. Par ailleurs, la modification de ces valeurs par l'interface devait être certaine et pérenne, afin que les modifications apportées soit effectivement prises en compte par l'application et donc modifier l'expérience de jeu en direct.
+
+	\subsubsection*{Préparer l'évolution du jeu et de la séance}
+Si permettre un ajustement en direct des propriétés du jeu par le soignant était une fonctionnalité que nous voulions impérativement mettre en place, celle-ci peut se révéler contraignante et répétitive si elle est utilisée seule. Nous voulions ainsi la possibilité de pouvoir enregistrer des configurations de paramètres, afin de pouvoir passer de l'une à l'autre aisément sans devoir faire chaque modification séparément. Par ailleurs, cela permet d'envisager beaucoup de possibilités comme la personnalisation de configurations pour des patients, l'adaptation aisée du jeu pour des besoins thérapeutiques différents ou encore l'automatisation d'une progression de la difficulté à l'aide de configuration prédéfinies.
+
+\paragraph{}Afin d'utiliser des fichiers configurations, il a ainsi fallu créer un système permettant de serialiser les données puis de les charger et de les lier à l'instance de jeu.\\
+J'ai par ailleurs durant mon stage créer plusieurs fichiers de configuration permettant une évolution progressive de la difficulté dans le mode de jeu Survie de Hammer \& Planks, pour sa version grand public.
+
+	\subsubsection{Usage (Retour de lapeyronie et intégration))}
+	
+\paragraph{les fichiers waves}
+
+\paragraph{}
 	*développement d'une IT (collab avec andy), les fichiers waves et autres propositions (paramètres de difficulté, groupe d'ennemis)
 		-aspect technique (paramétrisation) 
 		-usage (retour de lapeyronie et intégration)
