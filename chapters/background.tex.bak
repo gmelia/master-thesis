@@ -1,0 +1,82 @@
+NaturalPad est une société innovante dont le domaine d'activité est encore à ses débuts. Si les jeux vidéo sérieux commencent à être connus du grand public et leur impact reconnu, ceux pour la santé ne sont pas encore assez nombreux ni assez largement acceptés. Mon travail de stage s'inscrit en réponse à cette constatation : il s'agit de proposer une méthode de conception de jeux vidéo pour la santé qui permettrait une simplification ou une amélioration de la conception de tels jeux. Proposer plus de jeux  thérapeutiques et/ou des jeux avec un impact santé de plus grande qualité contribuerait à améliorer leur diffusion et leur reconnaissance. Pour ces raisons, il était ainsi primordial de parfaire ma connaissance des différents domaines concernés.
+
+Cette partie présente le résultat de mes recherches, des techniques et outils existants et comporte des notions importantes à connaître pour la conception de serious games pour la santé.
+
+%****************** Subsection 1 : jeux vidéo
+\input{chapters/background/jeux_video}
+
+
+%****************** Subsection 2 : Serious games et Theories comportementales
+	\subsection{Jeux sérieux}
+Les jeux vidéo se révèlent être un outil dont l’impact peut dépasser la simple portée ludique. Les serious games se proposent de profiter du ressort ludique du jeu vidéo pour servir volontairement un objectif sérieux distinct. Jeux éducationnels, commerciaux, idéologiques ou d’entraînement font partie de cette famille des jeux sérieux. D’un point de vue thérapeutique, il est possible de les utiliser afin de rendre le travail de réhabilitation ou de remise en forme plus motivant pour le patient en combinant les aspects ludique et thérapeutique.
+
+		\subsubsection{Serious games et théories comportementales}
+Les jeux vidéo sérieux se présentent comme un potentiel médiateur dans la modification des habitudes comportementales en permettant d’inclure des connaissances pratiques dans un modèle ludique apprécié. Il est possible d’y mettre en place des procédures de changement comme l’établissement d’objectifs ou la modélisation et le développement de compétences dans un environnement attrayant, significatif et immersif [Baranowski et al, 2008]\cite{Bara08}. \\
+Les jeux vidéo promeuvent les interactions sociales et d’apprentissage [Wideman et all, 2008], créent un environnement où les actions du joueur ont un effet [Gee, 2004]\cite{Gee04} , encouragent la résolution de problèmes [Gee, 2004]\cite{Gee04} et renforcent la compréhension en créant des situations de réflexion ou en aidant le joueur dans ses objectifs [Gee, 2004]\cite{Gee04}. Enfin, les jeux sérieux pour la santé sont fait pour distraire le joueur tout en l’éduquant, en l’entrainant ou en changeant ses comportements [Stokes, 2005]\cite{Stok05}.
+
+		\subsubsection*{Théories comportementales}
+Le comportement est la résultante d’influences multiples, rendant ainsi souvent les personnes réfractaires au changement [Baranowski, Lin \& al, 1997]\cite{Bara97}. Le comportement doit alors être considéré comme un mécanisme complexe découlant de l’enchaînement de plusieurs étapes. Ainsi, plutôt que de chercher à impacter directement le comportement, les experts comportementaux valorisent une action sur ces facteurs intermédiaires, appelés médiateurs. Changer ces médiateurs permet de changer le comportement [Baranowski, Lin \& al 1997]\cite{Bara97}.
+\paragraph{}Plusieurs grandes théories comportementales existent~:
+\begin{itemize}
+	\item la théorie d’inoculation comportementale [McGuire, 1961]
+	\item la théorie socio-cognitive [Bandura, 1986]
+	\item la théorie de l’auto-détermination [Ryan \& Deci, 2000]
+	\item la théorie de l’immersion [Green \& Brock, 2000]
+\end{itemize}
+
+\paragraph{}De ces théories, l’on peut alors identifier un certains nombre de ces facteurs médiateurs tels que : l’immersion, l’attention, l’auto-régulation, le développement de compétences, la motivation interne et externe, l’autonomie ou encore le sentiment de compétence. La science du comportement fournit aussi des techniques qui facilitent le changement comportemental, et propose d’utiliser ces facteurs dans les média de divertissement tel que le jeu vidéo.\\
+Le modèle : "Elaboration Likelihood Model" [Petty \& Cacioppo, 1986] soutient ainsi que des personnages crédibles, attrayants et sympathiques sont plus susceptibles d’être persuasifs que les autres et peuvent donc servir d’intermédiaires pour véhiculer un message. \\
+La théorie d’inoculation comportementale [McGuire, 1961] met en garde contre une possible contre-productivité en identifiant et en réfutant les menaces potentielles à l’accomplissement des objectifs du changement désiré.\\
+La théorie socio-cognitive [Bandura, 1986] préconise l’établissement d’objectifs et le développement de compétences comme paramètres importants dans le changement comportemental.\\
+Enfin, les théories socio-cognitive [Bandura, 1986] et d’auto-détermination [Ryan \& Deci, 2000] mettent toutes deux l’accent sur l’importance du feedback pour guider et mettre en forme le comportement durant le processus de changement.	
+
+	\subsubsection{Jeux sérieux thérapeutiques}
+Dans notre contexte, l’aspect sérieux recherché du jeu est la réhabilitation motrice ou la rééducation physique du joueur. Ces objectifs sont indiqués par des thérapeutes, médecins ou kinés, notamment dans le cadre de réhabilitation de personnes hémiplégiques ou souffrant de douleurs lombaires. L’intérêt du jeu vidéo est alors de proposer un environnement de réhabilitation plus agréable et de faciliter l’acceptation des travaux de rééducation par le patient grâce aux éléments de gameplay. Le jeu peut permettre un plus grand volume de travail de la part du patient car celui-ci sera plus enclin à les réaliser dans le cadre du jeu sérieux. Surtout, le jeu sérieux augmente la répétition de mouvements, ce qui améliore l'état physique du joueur-patient. L’objectif à terme est donc d’améliorer les résultats de l’objectif thérapeutique.
+
+
+%****************** Subsection 3 : Difficulté
+	\input{chapters/background/difficulte}
+
+
+%****************** Subsection 4 : Réhabilitation
+	\input{chapters/background/rehabilitation}
+	
+	\subsubsection*{Récupération de lombalgie}
+Si la réhabilitation post AVC a été au cœur de mon travail et de celui de NaturalPad, son objectif est de pouvoir proposer ou accéder à des solutions pour divers types de pathologies. Ainsi, un projet de NaturalPad pour lequel j'ai participé à la phase de conception a pour objectif de créer un serious game pour la rééducation de personnes lombalgiques.
+\paragraph{}
+La lombalgie est un état douloureux du rachis lombaire qui peut être aiguë ou chronique. Les lombalgies affectent une forte proportion de personnes puisque entre 40 et 70\% de la population est touchée à un moment ou un autre. Sous l'effet de la douleur, une majorité des patients va cesser toute activité physique voir même professionnelle. Une de ses conséquences est aussi une démotivation de la personne pouvant aller jusqu'à un état de dépression, notamment dû à l'inactivité et la douleur. Comme préconisé dans le Guide du Dos\cite{backbook}, la reprise et le maintien d'une activité physique sont primordiaux dans le processus de récupération. \\
+Le projet de NaturalPad est une application de coaching sportif adaptée à ce besoin et proposant un certain nombre d'exercices physiques gamifiés afin d'encourager la reprise d'activité des utilisateurs.
+
+%****************** Subsection 5 : Système de recommandation
+	\input{chapters/background/recommandation}
+	
+%****************** Subsection 6 : Méthodologies de conception
+	\subsection{Méthodologies de conception}
+On peut naïvement imaginer deux approches de conception s’opposant dans la conception des jeux sérieux. La première consisterait, de partir des objectifs sérieux et de proposer une “gamification” de ceux-ci en ajoutant des éléments de jeu. La seconde, à l’inverse, serait de partir de la composante ludique du jeu pour y intégrer ensuite le contenu sérieux. Bien qu’ayant l’avantage d’être simples à concevoir, ces deux démarches ont pour limite d’avantager l’une ou l’autre des composantes. Un jeu sérieux conçu à partir d’une base ludique aurait un impact sérieux limité, alors que l’ajout d’une composante ludique à une finalité sérieuse serait peu convaincant.
+Une troisième approche est donc de prendre en considération à la fois la composante ludique et l’intention sérieuse dès le début du processus de conception pour les fusionner au mieux. Si elle est correctement mise en place, cette approche promet une forte utilisation du jeu et un impact sérieux efficace. Elle présente néanmoins le défaut de devoir imaginer une nouvelle solution pour tout nouveau couple (jeu, objectif sérieux). C’est ce type d’approche que nous proposons ici, et nous verrons comment les résultats peuvent être réemployables.
+
+	\subsubsection*{Participative design : conception participative}
+La conception participative est une méthode de travail utilisée principalement en conception de logiciel interactif. Sa principale caractéristique est la participation active des utilisateurs au travail de conception. Il s'agit donc d'une méthode de conception centrée sur l'utilisateur où l'accent est mis sur le rôle actif des utilisateurs \cite{wiki:cp}.
+
+\paragraph{}
+Il existe dans la littérature de nombreuses variantes de la méthode et de nombreuses techniques utilisées pour impliquer efficacement les utilisateurs. On peut noter particulièrement~:
+\begin{itemize}
+    \item l'observation et entretiens
+    \item la production de scénarios
+    \item le brainstorming
+    \item le prototypage papier
+    \item le prototypage vidéo
+\end{itemize}
+
+\paragraph{}
+Une première séance de conception a lieu en début de projet : celle-ci regroupe les chercheurs et les développeurs de l'application, mais aussi les utilisateurs futurs ou potentiels. Intégrer les utilisateurs au processus de conception permet d'entrevoir au mieux leurs besoins et d'éviter un maximum d'erreurs d'interprétation ou d'oublis (voir illustration figure \ref{projet_info}). Les utilisateurs aident aussi à définir les problèmes éventuels et leurs possibles solutions.
+\begin{figure}
+	\centering
+	\includegraphics[width=16cm]{images/projet_info.jpg}
+	\caption{Allégorie d'un projet informatique}
+	\label{projet_info}
+\end{figure}
+
+\paragraph{}Par ailleurs, plusieurs séances peuvent avoir lieues tout au long du projet, afin de vérifier si les besoins ont évolués et si le développement actuel est effectivement en accord avec ceux-ci. Les utilisateurs aideront aussi l'équipe de recherche et développement à juger de la pertinence des solutions apportées.
+\paragraph{}
+D'un point de vue du développement, on notera que ce type de conception s'accorde parfaitement avec une méthodologie AGILE, et notamment la méthode SCRUM qui consiste en de courtes périodes de développement entre lesquelles on met en relief l'avancement par rapport au projet global.
