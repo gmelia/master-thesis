@@ -10,20 +10,20 @@ Ce projet se divise en deux parties distinctes~:
 	\subsubsection*{Interface thérapeutique}
 Celle-ci permet, à partir d'un terminal distinct, de choisir un jeu et de lancer une partie sur le terminal utilisé par le patient. Ce dernier sera équipé d'un périphérique de contrôle comme la caméra Kinect ou la wii board. A partir de cette interface, le soignant est en mesure de voir et de modifier l'ensemble des paramètres de jeu (en tout cas, le sous-ensemble considéré comme pertinent et effectivement envoyé à l'application). De plus, à la fin d'une partie, il sera capable de visualiser les données de la session de jeu, comme l'apparition d'évènements ou les zones que le joueur a réussi ou non à atteindre. Ces informations sont utiles pour mieux cibler les difficultés du patient et ajuster au mieux les prochaines séances. Cette partie du projet a été réalisée par Andy Camicci durant son stage chez NaturalPad entre Avril et Juin 2013.
 
-\begin{figure}[htbp]
-	\centering
-%	\includegraphics[scale=]{images/interface_therapeutique_01.png}
-	\caption{TODO Modification des valeurs du jeu dans l'interface thérapeutique}
-	\label{interface_therapeutique_01}
+\begin{figure}[h!]
+   \begin{minipage}[b]{0.49\linewidth}
+		\centering 
+		\includegraphics[width=8cm, height=6cm]{images/interface_parametres.png}
+		\caption{Modification des valeurs du jeu dans l'interface thérapeutique}
+		\label{interface_therapeutique_01}
+   \end{minipage}\hfill
+   \begin{minipage}[b]{0.49\linewidth}   
+		\centering
+		\includegraphics[width=8cm, height=6cm]{images/interface_recap.png}
+		\caption{Visualisation des données de la partie dans l'interface.}
+		\label{interface_therapeutique_02}
+   \end{minipage}
 \end{figure}
-
-\begin{figure}[htbp]
-	\centering
-%	\includegraphics[scale=]{images/interface_therapeutique_02.png}
-	\caption{TODO Visualisation des données de la partie.}
-	\label{interface_therapeutique_02}
-\end{figure}
-
 	\subsubsection*{Maitriser la difficulté : le paramétrage des variables de jeu}
 Cette partie consiste en l'extraction des paramètres de jeux et en la création d'un système permettant de créer, d'enregistrer et de transmettre des configurations de ces attributs à l'interface thérapeutique.
 
@@ -83,21 +83,21 @@ Il est possible de modifier l'expérience de jeu en modifiant la valeur des vari
 Pour cette raison, toujours dans l'idée d'une adaptation de la difficulté, la suite logique était de proposer une méthode permettant d'aider à la conception de jeux sérieux thérapeutiques.
  
 \subsection{Conception}
-	La seconde partie de mon travail fut donc consacrée à la proposition et à l'expérimentation de moyens de conception de jeux vidéo sérieux pour la santé. Pour cela, j'ai emprunté deux approches, répondant à des contextes un peu différents.
+	La seconde partie de mon travail fut consacrée à la proposition et à l'expérimentation de moyens de conception de jeux vidéo sérieux pour la santé. Pour cela, j'ai emprunté deux approches, répondant à des contextes un peu différents.
 	
 	\subsubsection{Ensemble d'outils d'aide à la conception de SG}
-	La première proposition s'inscrit dans une problématique où l'on souhaite créer un serious game dont l'objectif sérieux est de l'ordre de l'aide à la réhabilitation motrice. Il s'agit ici de proposer un outil intégrant un certain nombre de connaissances utiles ou nécessaires à la conception de ce type de jeux. L'idée est de mettre à disposition des documents regroupant un maximum des informations qui seront utiles dans le processus de conception. Cela permettrait aux différents corps de métier impliqués dans le processus de conception d'avoir accès aux connaissances qui leur font défaut et d'avoir une vision globale des éléments en jeu.
+	La première proposition s'inscrit dans une problématique où l'on souhaite créer un serious game dont l'objectif sérieux est de l'ordre de l'aide à la réhabilitation motrice. Il s'agit ici de proposer un outil intégrant un certain nombre de connaissances utiles ou nécessaires à la conception de ce type de jeux. L'idée est de mettre à disposition des documents regroupant un maximum des informations qui seront utiles dans le processus de conception. Cela permettrait aux différents corps de métier impliqués dans le processus de conception d'avoir accès à des connaissances qui leur font défaut et d'avoir une vision globale des éléments en jeu.
 	
 		\paragraph{}
 A la frontière entre conception de jeux vidéo et monde médical, ce travail nécessite la compétence de professionnels de la santé ainsi que d’une expertise du domaine du jeu vidéo.
-			\paragraph{\emph{Aspect médical}\\}
+			\paragraph{\emph{Connaissances médicales}\\}
 La première étape consiste à définir et lister les objectifs thérapeutiques que l’on souhaite atteindre, les exercices que proposent les professionnels pour y parvenir, ainsi que les éléments de difficulté qui peuvent être rencontrés dans ces exercices. Ces informations doivent provenir de médecins et de thérapeutes qui vont trouver un intérêt dans l’utilisation ou la prescription de serious games pour la santé. Les informations que j'ai pu recueillir, particulièrement autour de l'AVC, sont regroupées dans la partie \ref{objectifs_therapeutiques}.
 
 \paragraph{}
 Dans le but de faciliter la démarche de conception en fonction d’un objectif thérapeutique particulier, il est aussi intéressant de trouver une méthode classification de ces objectifs qui soit parlante pour les thérapeutes. Dans le cadre de mon stage, je me suis particulièrement concentré sur les aspects moteurs, comme présenté dans la figure \ref{objectifs_moteurs}. Pour réaliser ce document, je me suis tout d'abord inspiré de mes recherches documentaires et du résultats de mes différents entretiens avec des professionnels de la santé.
 
 \paragraph{}
-Dans cette première version, j'avais classé les objectifs thérapeutiques au moyen de trois propriétés : la zone du corps affectée (membres supérieurs, inférieurs, tête, tronc), le membre précisément affecté (main - poignet- avant-bras ou pied - jambe, etc.) et des paramètres propres à ces membres (amplitude, force, vitesse ou durée de mouvements, membre gauche ou droit, etc.). Cependant, cette première version avait l'inconvénient de proposer des éléments différents selon le choix initial, et d'autres éléments étaient dupliqués.
+Dans cette première version, j'avais classé les objectifs thérapeutiques au moyen de trois propriétés : la zone du corps affectée (membres supérieurs, inférieurs, tête, tronc), le membre précisément affecté (main - poignet- avant-bras ou pied - jambe, etc.) et des paramètres propres à ces membres (amplitude, force, vitesse ou durée de mouvements, membre gauche ou droit, etc.). Cependant, cette première version avait l'inconvénient de proposer des éléments différents selon le choix initial alors que d'autres éléments étaient dupliqués.
 
 \paragraph{}J'ai ensuite proposé ma classification à deux kinésithérapeutes (Didier Costeau et Karima Bahkti) afin de voir si elle leur semblait pertinente ou s'ils voyaient des éléments à ajouter ou à modifier. Il s'est en fait avéré que cette classification ne correspondait pas du tout à la manière dont raisonnent les thérapeutes lorsqu'ils établissent les objectifs d'une rééducation. Ce fut donc l'occasion de re-designer cette classification. La version 2 ici proposée en figure \ref{objectifs_moteurs} a par la suite été revue et validée.
 
@@ -118,17 +118,30 @@ Dans cette première version, j'avais classé les objectifs thérapeutiques au m
 \end{figure}
 
 			\paragraph{\emph{Aspect Game Design}\\}
-L'autre aspect du processus de conception de serious games pour la santé concerne l'aspect vidéo-ludique. Pour cela, j'ai tout d'abord commencé par établir une classification des principaux types de jeux vidéo en fonction de leur gameplay, visible dans l'annexe \ref{types_jeux}. Ce document peut être intéressant pour plusieurs raisons. Dans un premier temps, il peut permettre aux concepteurs d'envisager des gameplays auxquels ils n'auraient pas pensé : par oubli ou simplement par méconnaissance du concept de jeu. Pour être plus parlante, la classification propose par ailleurs des exemples de jeux existants pour chaque type de gameplay. \\
-Bien sur, cette liste ne peut être totalement exhaustive : beaucoup de jeux vidéo, particulièrement les jeux mettant l'accent sur une difficulté logique, possèdent leur style propre.
+L'autre aspect du processus de conception de serious games pour la santé concerne l'aspect vidéo-ludique. Pour cela, j'ai établi une classification des principaux types de jeux vidéo en fonction de leur gameplay, proposée dans l'annexe \ref{types_jeux}. Ce document peut être intéressant pour plusieurs raisons. Dans un premier temps, il peut permettre aux concepteurs d'envisager des gameplays auxquels ils n'auraient pas pensé : par oubli ou simplement par méconnaissance du concept de jeu. Pour être plus parlante, la classification propose par ailleurs des exemples de jeux existants pour chaque type de gameplay. \\
+Bien sur, cette liste ne peut être totalement exhaustive : beaucoup de jeux vidéo, particulièrement les jeux mettant l'accent sur une difficulté logique, possèdent leur style propre. Le monde des jeux vidéo indépendants regorge par ailleurs de jeux vidéo au concept novateur.
 
-\paragraph{}
-De l’autre coté du processus, il est nécessaire d’établir le lien entre les différents types de jeux vidéo existant, leur gameplay et les types de contrôles qui s’y adaptent de manière optimale. Un dernier élément, en lien avec les éléments de difficulté d’un jeu, est l’ajustement de la difficulté et l’évolution possible de celle-ci, en terme de gameplay. La littérature et l’analyse des jeux vidéo existant peuvent aider à connaître ces liens. 
+			\paragraph{}
+Nous avons vu l'importance des théories cognitives et comportementales dans l'efficacité des jeux sérieux. J'ai aussi proposé sur la figure \ref{lien_theories} quels peuvent être les liens et les influences entre ces composantes. A partir de ces bases, il me semblait intéressant de proposer une relation entre ces composantes et les \emph{objets} présents dans tout jeux vidéo. Ces objets représentent les feedbacks, les menus, la GUI, les méthodes de contrôle ou les interactions du jeu par exemple. Une proposition générique permettrait de connaître les éléments importants à mettre en place dans le jeu, en fonction de l'élément de théorie sur lequel on souhaite insister. Par exemple, si l'on souhaite concevoir un jeu sérieux pour aider des enfants à se concentrer, on va vouloir mettre en œuvre des éléments indiqués par la théorie de l'engagement et de l'immersion. Il resterait ensuite à trouver quels éléments génériques d'un jeu vidéo permettent d'influencer sur ces éléments.
+Cette proposition de lien entre théories cognitives et comportements et éléments de jeu vidéo, est présentée en annexe~\ref{matching}.
 
-			\paragraph{\emph{Le contrôle, lien entre objectifs thérapeutiques et contraintes ludiques}\\}
-L’objectif sérieux des serious game étant de nature motrice, nous avons décidé de nous concentrer sur les contrôles. Pour faire le lien entre les objectifs thérapeutiques et le jeu sérieux que l’on veut créer pour y répondre, l’utilisation d’interface dites naturelles comme la Kinect ou les accessoires de la Wii nous semblait particulièrement pertinente. Nous souhaitons alors orienter la conception du jeu pour qu’il utilise l’un de ces outils afin de permettre le contrôle qui correspond le plus naturellement aux exercices que l’on cherche à faire réaliser par le joueur-patient. Il est nécessaire pour cela de trouver comment adapter les contrôles classiques d’un gameplay donné en contrôles naturels, cad, comment passer de la manette à un contrôle par les gestes pour chaque type de gameplay.
+\paragraph{}Malheureusement, il s'est avéré qu'une méthode générique n'était pas appropriée pour répertorier les paramètres d'un jeu vidéo. En fait, chaque type de jeu vidéo à ses règles et mécanismes propres, ce qui modifie radicalement le contenu d'un jeu d'un type à l'autre. Ainsi, dans un jeu d'\emph{aventure graphique point and click}, des éléments comme le contrôle de la vue ou les paramètres d'une partie sont inexistants ou presque, alors qu'ils représentent des éléments essentiels dans les RTS et les FPS.
+\paragraph{}A l'inverse, un élément comme le feedback semble particulièrement important quel que soit le type de jeu. Il est par ailleurs en relation avec un grand nombre de ressorts cognitifs. La teneur du besoin n'aura pas une réelle influence sur l'importance de ce paramètre.
+
+\paragraph{}Pour être pertinent, on pourrait proposer le même genre de relation pour plusieurs types de jeux vidéo. Ainsi, une fois défini le type de jeu qu'elle souhaite développer, l'équipe pourrait voir quels sont spécifiquement les éléments sur lesquels elle souhaite insister. \\
+Une autre approche serait de pouvoir proposer un type de jeux vidéo à partir d'une sélection de concepts cognitifs ou comportementaux.
+
+			\paragraph{\emph{Le contrôle, lien entre objectifs thérapeutiques et mécanismes ludiques}\\}
+Dans notre cadre, l'impact sérieux des serious games étant de nature motrice, nous avons décidé de nous concentrer sur les contrôles. Pour faire le lien entre ces objectifs thérapeutiques et le jeu que l’on veut souhaite pour y répondre, l’utilisation d’interfaces dites naturelles nous semblait particulièrement pertinente. 
+
+\paragraph{} 
+Théoriquement, les possibilités de mouvements pour interagir avec un jeu sont multiples et variées. Cependant, nous souhaitons nous limiter à l'utilisation de périphériques courants et relativement peu onéreux, c'est-à-dire les périphériques courants du jeu vidéo : accessoires wii et kinect.
+
+
+\paragraph{} Pour cela de trouver comment adapter les contrôles classiques d’un gameplay donné en contrôles naturels, cad, comment passer de la manette à un contrôle par les gestes pour chaque type de gameplay.
 
 	
-	\subsubsection{Proposition d'une méthodologie de conception de SG}
+	\subsubsection{Méthodologie de conception de SG}
 	\paragraph{}
 	deuxieme propo c'est de faire comme j'ai fait avec impact mapping et al.
 	
@@ -147,7 +160,6 @@ L’objectif sérieux des serious game étant de nature motrice, nous avons déc
 	-travail avec les thérapeutes
 	-répondre aux objectifs thérapeutique par un gamedesign
 		- hammer \& Planks et l'équilibre (voir rapport d'anais)
-		- classement des objectifs thérapeutique, carte d'impact
 	-ajustement de la difficulté et lien avec la thérapie : impact des paramètres en terme de difficulté (équilibre et dos?)
 	
 	-proposition de controle naturels pour des jeux pour une utilisation thérapeutiques
