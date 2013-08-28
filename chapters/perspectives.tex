@@ -1,10 +1,34 @@
-	hammer and planks : (paramètres de difficulté, groupe d'ennemisn GAMEPLAY ASYMETRIQUE)\newline
+	\subsection{\emph{Hammer \& Planks}, un serious game modulable}
+Le projet \emph{Hammer \& Planks} fut une composante forte de mon stage. Il m'a servi de terrain d'expérimentation des différentes idées inspirées par les connaissances acquises au cours de ces six mois. J'ai ainsi travaillé aussi bien sur la version thérapeutique que sur la version grand public, dont les enjeux sont différents. C'est aussi un projet mettant un place un système d'ajustement des paramètres, permettant d'adapter sa difficulté et les mouvements des joueurs.
+
+	\paragraph{}Par rapport à ce qui est déjà mis en place dans le jeu, il est possible d'imaginer de nouvelles fonctionnalités. Une approche à laquelle nous réfléchissons actuellement est la mise en place d'un \textbf{gameplay asymétrique}. \\
+Cette proposition trouve son intérêt à la fois dans la version grand public et la version thérapeutique. L'idée est de permettre à un second joueur de participer à l'expérience de jeu en utilisant un périphérique tiers : tablette ou smartphone. Ce joueur pourrait par exemple incarner le vent pour aider ou perturber la navigation du joueur principal, jouer le rôle d'un membre de l'équipage pour donner des bonus ou encore se poser comme concurrent. 
+
+\paragraph{}De manière générale, l'objectif est de permettre une interaction entre les joueurs et d'enrichir l'expérience globale de jeu. Nous avons vu dans notre background l'intérêt et la volonté des patients en rééducation de pouvoir partager des activités avec leurs proches.
+
+\paragraph{} Une dernière proposition de fonctionnalité pour ajuster le niveau de difficulté, concerne la gestion des ennemis. Actuellement, le système offre la possibilité de régler la fréquence d'apparition des ennemis, ainsi que la densité de répartition des différents types d'ennemis, comme le montre la figure~\ref{interface_ennemis}. \\
+Afin d'apporter plus de finesse au système, je propose la possibilité de créer des bataillons d'ennemis. On pourrait alors par exemple définir la taille maximale d'un bataillon (nombre d'unités en son sein), le type des unités le composant ou encore un schéma de patrouille. De manière plus globale, il serait possible de préciser le nombre maximum de bataillons simultanés ou le temps d'apparition entre deux bataillons. Cela laisserait la possibilité pour le joueur, le designer ou le thérapeute d'établir de nouvelles stratégies. 
+
+	\subsection{Proposer un système de paramètres prédéfinis}
+Afin d'enrichir le système d'ajustement de la difficulté de \emph{Hammer \& Planks}, on pourrait proposer quelques configurations prédéfinies de paramètres, comme il se fait classiquement dans les jeux vidéo. Dans la version grand public, cela se traduirait par la proposition de plusieurs niveaux de difficulté ("facile", "moyen", "difficile").
+
+\paragraph{}
+La proposition est particulièrement intéressante pour la version santé du jeu, notamment couplée avec l'interface thérapeutique. \\
+Il serait en effet beaucoup plus ergonomique et intuitif pour les thérapeutes de pouvoir directement choisir des ensembles de valeurs de paramètres dont l'application correspondrait à un objectif thérapeutique. Par exemple, plutôt que de devoir modifié manuellement tous les paramètres ayant un impact l'utilisation du bras gauche du joueur-patient, il lui suffirait de choisir l'ensemble prédéfini correspondant. On peut aussi parler de meta-paramètres.
+
+\paragraph{} Bien sur, plusieurs ensemble pourraient correspondre aux mêmes besoins. Enfin, afin de permettre une adaptation la plus complète possible, il faudrait laisser la possibilité aux soignants de créer ou de modifier eux-mêmes ce type de configurations. Cela permettrait de faciliter l'utilisation de la plateforme et des jeux par les thérapeutes.
+
+\paragraph{} Dans le cadre plus spécifique de l'adaptation aux besoins thérapeutiques, il est aussi envisageable de créer plusieurs modes de jeu spécifiques ou ajouter de nouvelles possibilités dans l'interface thérapeutiques. Par exemple, si l'on cherche à faire réaliser par le joueur-patient un certain schéma moteur (suite de modifications de son centre de gravité par exemple), il serait pratique pour le thérapeute de créer à la volée le parcours du jeu incitant le joueur à réaliser un tel schéma.
+
+
+	\subsection{Proposer un système de recommandation}
+Comme nous l'avons vu dans la partie~\ref{recommandation}	avoir une information de profil pour cibler la difficulté -> nourrir un systeme de recommandation\\
+	-ajustement dynamique de la difficulté selon le profil/résultats du joueur(parametrisation initiale, en VS a l'adaptation dynamique)
 	
-	-avoir une information de profil pour cibler la difficulté -> nourrir un systeme de recommandation\\
-	-ajustement dynamique de la difficulté selon le profil/résultats du joueur\newline
+	\subsection{Étendre et éprouver la méthodologie de conception}
 	-étendre le domaine de la méthodologie à d'autre pathologies et matériels\newline
 	-éprouver les propositions de méthodo, sur un cas concret et complet\newline
-	-permettre un paramétrage par objectifs non par paramètres permettant de faciliter l'utilisation de la plateforme et des jeux par les thérapeutes \newline
+	
 	- Le pb c'est que j'ai rien qui dise clairement "pour tel exercice/objectif, fais plutot ce type de jeu avec tels contrôles. Du coup, est-ce que ca pourrait pas être une forme de perspective? disant que ça nécessiterait du travail et serait moins parfait qu'un truc personnalisé, mais ca permettrait de gagner du temps tout en étant mieux que ce qui existe actuellement
 	A l'inverse, la démarche que j'ai emprunté dans ma méthode semble mieux coller aux besoins, mais nécessite plus de travail.
  

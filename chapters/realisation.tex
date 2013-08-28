@@ -8,22 +8,32 @@ Ce projet se divise en deux parties distinctes~:
 \end{enumerate}
 
 	\subsubsection*{Interface thérapeutique}
-Celle-ci permet, à partir d'un terminal distinct, de choisir un jeu et de lancer une partie sur le terminal utilisé par le patient. Ce dernier sera équipé d'un périphérique de contrôle comme la caméra Kinect ou la wii board. A partir de cette interface, le soignant est en mesure de voir et de modifier l'ensemble des paramètres de jeu (en tout cas, le sous-ensemble considéré comme pertinent et effectivement envoyé à l'application). De plus, à la fin d'une partie, il sera capable de visualiser les données de la session de jeu, comme l'apparition d'évènements ou les zones que le joueur a réussi ou non à atteindre. Ces informations sont utiles pour mieux cibler les difficultés du patient et ajuster au mieux les prochaines séances. Cette partie du projet a été réalisée par Andy Camicci durant son stage chez NaturalPad entre Avril et Juin 2013.
+Celle-ci permet, à partir d'un terminal distinct, de choisir un jeu et de lancer une partie sur le terminal utilisé par le patient (voir figure~\ref{interface_accueil}). Ce dernier sera équipé d'un périphérique de contrôle comme la caméra Kinect ou la wii board. A partir de cette interface, le soignant est en mesure de voir (figure~\ref{ensemble_parametres}) et de modifier(figure~\ref{interface_parametres}) l'ensemble des paramètres de jeu (en tout cas, le sous-ensemble considéré comme pertinent et effectivement envoyé à l'application). 
 
-\begin{figure}[h!]
-   \begin{minipage}[b]{0.49\linewidth}
-		\centering 
-		\includegraphics[width=8cm, height=6cm]{images/interface_parametres.png}
-		\caption{Modification des valeurs du jeu dans l'interface thérapeutique}
-		\label{interface_therapeutique_01}
-   \end{minipage}\hfill
-   \begin{minipage}[b]{0.49\linewidth}   
+
+\begin{figure}[!hbtp]
+	\begin{minipage}{0.5\linewidth}	
 		\centering
-		\includegraphics[width=8cm, height=6cm]{images/interface_recap.png}
-		\caption{Visualisation des données de la partie dans l'interface.}
-		\label{interface_therapeutique_02}
-   \end{minipage}
+		\includegraphics[width=7.5cm, height=5cm]{images/interface_accueil.png}
+		\caption{Page de l'interface au lancement d'une partie de H\&P }
+		\label{interface_accueil}
+	\end{minipage}	
+	\begin{minipage}{0.5\linewidth}	
+		\centering
+		\includegraphics[width=7.5cm, height=5cm]{images/interface_parametres.png}
+		\caption{Modifications de valeurs des paramètres du jeu H\&P}
+		\label{interface_parametres}
+	\end{minipage}
 \end{figure}
+\paragraph{} De plus, à la fin d'une partie, il sera capable de visualiser les données de la session de jeu (voir figure~\ref{interface_recap}), comme l'apparition d'évènements ou les zones que le joueur a réussi ou non à atteindre. Ces informations sont utiles pour mieux cibler les difficultés du patient et ajuster au mieux les prochaines séances. Cette partie du projet a été réalisée par Andy Camicci durant son stage chez NaturalPad entre Avril et Juin 2013.
+\begin{figure}[!hbtp]
+	\centering
+		\includegraphics[width=8cm]{images/interface_recap.png}
+		\caption{Récapitulatif d'une session de jeu H\&P}
+		\label{interface_recap}
+\end{figure}
+
+
 	\subsubsection*{Maitriser la difficulté : le paramétrage des variables de jeu}
 Cette partie consiste en l'extraction des paramètres de jeux et en la création d'un système permettant de créer, d'enregistrer et de transmettre des configurations de ces attributs à l'interface thérapeutique.
 
@@ -31,10 +41,24 @@ Cette partie consiste en l'extraction des paramètres de jeux et en la création
 \emph{Hammer \& Planks} est développé avec le moteur de jeu Unity3d et les scripts codés avec le langage de programmation C\#. Comme nous l'avons dit, \emph{H\&P} possède de nombreux contenus contribuant à la richesse du gameplay et aux possibilités d'ajustement. Lors de mon arrivée au sein de NaturalPad, ces objets n'étaient cependant pas ajustables facilement : il fallait rechercher l'ensemble des objets dont on souhaitait modifier un paramètre, trouver les variables correspondant à ces paramètres puis les modifier soit directement dans le code soit par l'intermédiaire de l'éditeur d'Unity. La raison en est que les contraintes de développement du jeu n'ont pas permis de découpler ces informations.
 
 \paragraph{}
-Mon premier travail a donc été de découvrir le code et de rechercher toutes les variables dont on souhaiterait potentiellement vouloir modifier la valeur dans un contexte d'ajustement du jeu pour un exercice de rééducation. J'ai ensuite créé une classe spécifique permettant de regrouper conceptuellement les données modifiables. J'ai ainsi regroupé ces données dans des thèmes tels que \emph{réseau}, \emph{ennemis}, \emph{joueur}, \emph{contrôles} ou \emph{cosmétiques}.
+Mon premier travail a donc été de découvrir le code et de rechercher toutes les variables dont on souhaiterait potentiellement vouloir modifier la valeur dans un contexte d'ajustement du jeu pour un exercice de rééducation. J'ai ensuite créé une classe spécifique permettant de regrouper conceptuellement les données modifiables. J'ai ainsi regroupé ces données dans des thèmes tels que \emph{réseau}, \emph{ennemis}, \emph{joueur}, \emph{contrôles} ou \emph{cosmétiques} (figure~\ref{ensemble_parametres}).
+\begin{figure}[!hbtp]
+	\centering
+	\includegraphics[width=14cm, height=8cm]{images/ensemble_parametres.png}
+	\caption{Visualisation des groupes de paramètres dans l'interface web}
+	\label{ensemble_parametres}
+\end{figure}
 
 \paragraph{}
-En parallèle, j'ai aussi procédé au refactoring de l'ensemble des classes possédant ou utilisant un ou plusieurs attributs modifiables. L'intérêt était bien sur d'avoir un accès commun unique à ces valeurs, mais aussi et surtout que les valeurs puissent être modifiées de manière extérieure par l'interface thérapeutique. Par ailleurs, la modification de ces valeurs par l'interface devait être certaine et pérenne, afin que les modifications apportées soit effectivement prises en compte par l'application et donc modifier l'expérience de jeu en direct.
+En parallèle, j'ai aussi procédé au refactoring de l'ensemble des classes possédant ou utilisant un ou plusieurs attributs modifiables. L'intérêt était bien sur d'avoir un accès commun unique à ces valeurs, mais aussi et surtout que les valeurs puissent être modifiées de manière extérieure par l'interface thérapeutique. On peut voir le lien entre la modification des valeurs des paramètres dans l'interface thérapeute et les éléments du jeu en figure~\ref{comparatif_interface_rochers}. Par ailleurs, la modification de ces valeurs par l'interface devait être certaine et pérenne, afin que les modifications apportées soit effectivement prises en compte par l'application et donc modifier l'expérience de jeu en direct.
+
+\begin{figure}[!hbtp]
+	\centering
+	\includegraphics[width=16cm]{images/comparatif_interface_rochers.png}
+	\caption{Interface thérapeutique et écran du jeu hammer \& Planks}
+\emph{	On voit que le thérapeute a changé la fonction de localisation des rochers dans l'interface, et que cela s'applique dans le jeu. Le patient est ainsi contraint de se diriger sur sa droite, l'incitant à faire travailler son coté hémiplégique.}
+	\label{comparatif_interface_rochers}
+\end{figure}
 
 	\subsubsection*{Préparer l'évolution du jeu et de la séance}
 Si permettre un ajustement en direct des propriétés du jeu par le soignant était une fonctionnalité que nous voulions impérativement mettre en place, celle-ci peut se révéler contraignante et répétitive si elle est utilisée seule. Nous voulions aussi enregistrer des configurations de paramètres, afin de pouvoir passer de l'une à l'autre aisément sans devoir faire chaque modification séparément. Par ailleurs, cela permet d'envisager beaucoup de possibilités comme la personnalisation de configurations pour des patients, l'adaptation aisée du jeu pour des besoins thérapeutiques différents ou encore l'automatisation d'une progression de la difficulté à l'aide de configuration prédéfinies.
@@ -50,7 +74,7 @@ Les premières choses marquantes sont la curiosité et l'enthousiasme général 
 \begin{figure}[hbt]
 	\centering
 	\includegraphics[height=11cm]{images/test_lapeyronie.png}
-	\caption{Séance de test du jeu Hammer \& Planks au centre hospitaler de Lapeyronie}
+	\caption{Séance de test du jeu Hammer \& Planks au centre hospitalier de Lapeyronie}
 	\label{test_lapeyronie}
 \end{figure}
 \paragraph{} 
@@ -67,11 +91,8 @@ Enfin, réaliser des tests pendant une demie-journée nous a aussi permis de jug
 Concernant les paramètres enfin, nous avons modifié les valeurs par défaut de certains et ajusté les bornes min et max des plages de valeurs.
 
 		
-	\paragraph{TODO} Nous avons ensuite réalisé une nouvelle séance de tests du jeu intégrant ces modifications. C'est avec plaisir que nous avons constaté que les réponses apportées étaient pertinentes et plaisaient à nos testeurs. Ce fut aussi l'occasion d'avoir de nouveaux retours et de continuer notre processus de conception participative.
+	\paragraph{} Nous avons ensuite réalisé une nouvelle séance de tests du jeu intégrant ces modifications. C'est avec plaisir que nous avons constaté que les réponses apportées étaient pertinentes et plaisaient à nos testeurs. Ce fut aussi l'occasion d'avoir de nouveaux retours et de continuer notre processus de conception participative.
 	
-\paragraph{montrer un aperçu des valeurs modifiables?} et leur utilité d'un point de vue
-ajustement et rééduc. Et peut être aussi des images sur le thème "avant/après" pour montrer l'évolution et l'intéret des test en situation.
-
 	\subsubsection*{Conclusion}
 	Cette expérience et ce travail sur \emph{Hammer \& Planks} m'ont permis de vérifier l'intérêt et la réelle pertinence de jeux sérieux pour la rééducation. Par ailleurs, l'intégration d'un nouveau périphérique, la Kinect, débloquant de nouveaux gameplay avec un système de jeu identique, m'a confirmé l'importance du moyen de contrôle à la fois sur le gameplay mais aussi et surtout sur la richesse des applications thérapeutiques qui en découlent. Enfin, les critiques des soignants et des patients au cours des deux séances de tests m'ont assuré de l'importance et du réel intérêt de pouvoir ajuster manuellement les variables de jeux directement pendant la séance. C'est à la fois très gratifiant pour notre travail et très encourageant pour les possibilités en terme de réhabilitation.
 	
