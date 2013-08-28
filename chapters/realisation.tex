@@ -8,14 +8,14 @@ Ce projet se divise en deux parties distinctes~:
 \end{enumerate}
 
 	\subsubsection*{Interface thérapeutique}
-Celle-ci permet, à partir d'un terminal distinct, de choisir un jeu et de lancer une partie sur le terminal utilisé par le patient (voir figure~\ref{interface_accueil}). Ce dernier sera équipé d'un périphérique de contrôle comme la caméra Kinect ou la wii board. A partir de cette interface, le soignant est en mesure de voir (figure~\ref{ensemble_parametres}) et de modifier(figure~\ref{interface_parametres}) l'ensemble des paramètres de jeu (en tout cas, le sous-ensemble considéré comme pertinent et effectivement envoyé à l'application). 
+Celle-ci permet, à partir d'un terminal distinct, de choisir un jeu et de lancer une partie sur le terminal utilisé par le patient (voir figure~\ref{interface_accueil}). Celui-ci sera équipé d'un périphérique de contrôle comme la caméra Kinect ou la wii board. A partir de cette interface, le soignant est en mesure de voir (figure~\ref{ensemble_parametres}) et de modifier(figure~\ref{interface_parametres}) l'ensemble des paramètres de jeu (en tout cas, le sous-ensemble considéré comme pertinent et effectivement envoyé à l'application). 
 
 
 \begin{figure}[!hbtp]
 	\begin{minipage}{0.5\linewidth}	
 		\centering
 		\includegraphics[width=7.5cm, height=5cm]{images/interface_accueil.png}
-		\caption{Page de l'interface au lancement d'une partie de H\&P }
+		\caption{Interface thérapeutique de NaturalPad au lancement d'une partie de H\&P }
 		\label{interface_accueil}
 	\end{minipage}	
 	\begin{minipage}{0.5\linewidth}	
@@ -80,7 +80,7 @@ Les premières choses marquantes sont la curiosité et l'enthousiasme général 
 \paragraph{} 
 Lors de la première séance de tests, nous avons ainsi eu de nombreux retours positifs portant sur la possibilité d'ajuster le jeu en direct, la visualisation des informations de la session de jeu ou encore le plaisir de jeu. Nous avons aussi eu de nombreuses remarques menant à l'ajout de fonctionnalités, notamment par le personnel.\\
 Les remarques les plus fréquentes concernaient le visuel du jeu : les soignants craignaient que les graphismes soient trop riches et les effets trop complexes pour des patients hémiplégiques. L'effet visuel des mouvements de la mer fut notamment cité, et la différenciation entre bonus et obstacles (ennemis, projectiles et mines ennemies) jugée trop complexe.\\
-Enfin, réaliser des tests pendant une demie-journée nous a aussi permis de juger le résultat selon d'autres critères. Durant la phase d'ajustement des paramètres via l'interface thérapeutique, certaines modifications devenaient automatique, remettant en cause la pertinence de notre configuration par défaut. A l'inverse, certaines valeurs n'étaient jamais utilisées, ni même finalement envisageables : la plage de valeurs de certains paramètres était donc à revoir.
+Enfin, réaliser des tests pendant une demie-journée nous a aussi permis de juger le résultat selon d'autres critères. Durant la phase d'ajustement des paramètres via l'interface thérapeutique, certains ajustements revenaient systématiquement, remettant en cause la pertinence de notre configuration par défaut. A l'inverse, certaines valeurs n'étaient jamais utilisées, ni même finalement envisageables : la plage de valeurs de certains paramètres était donc à revoir.
 
 \paragraph{De l'importance des tests utilisateurs\\}Petite anecdote enfin, prouvant définitivement l'importance de réaliser des tests en conditions réelles. Lorsqu'on utilise le jeu avec la Kinect, le joueur doit lever la main afin d'être reconnu comme la personne joueuse parmi les possibles multiples personnes détectées par la caméra. Ce système fonctionnait parfaitement lors de nos tests en interne. Or quand une patient hémiplégique a tenté de jouer, le système ne la reconnaissait pas. La raison en était que la patiente avait une hémiplégie du coté gauche et voulait donc jouer avec sa main gauche pour travailler sa rééducation. Or, le système était configuré pour ne détecter qu'une main droite... aucun membre de l'équipe n'étant gaucher, nous n'avions pas détecté ce grossier oubli ! L'erreur a bien sur depuis été corrigée.
 
