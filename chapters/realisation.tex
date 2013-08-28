@@ -47,7 +47,12 @@ Si le projet \emph{Hammer \& Planks} a été initié par une étudiante en ergot
 
 \paragraph{} Nous approchant d'une méthode de conception participative, nous avons ainsi réalisé plusieurs séances de tests avec des patients hémiplégiques et leurs thérapeutes. \\
 Les premières choses marquantes sont la curiosité et l'enthousiasme général à la fois des patients et du personnel soignant. Peu d'entre eux connaissaient l'existence de jeux sérieux pour la santé, et dans le cas contraire, appréciaient particulièrement l'accent mis sur l'aspect vidéo-ludique de \emph{Hammer \& Planks}. Ce fut donc un premier point très positif pour l'équipe.
-
+\begin{figure}[hbt]
+	\centering
+	\includegraphics[height=11cm]{images/test_lapeyronie.png}
+	\caption{Séance de test du jeu Hammer \& Planks au centre hospitaler de Lapeyronie}
+	\label{test_lapeyronie}
+\end{figure}
 \paragraph{} 
 Lors de la première séance de tests, nous avons ainsi eu de nombreux retours positifs portant sur la possibilité d'ajuster le jeu en direct, la visualisation des informations de la session de jeu ou encore le plaisir de jeu. Nous avons aussi eu de nombreuses remarques menant à l'ajout de fonctionnalités, notamment par le personnel.\\
 Les remarques les plus fréquentes concernaient le visuel du jeu : les soignants craignaient que les graphismes soient trop riches et les effets trop complexes pour des patients hémiplégiques. L'effet visuel des mouvements de la mer fut notamment cité, et la différenciation entre bonus et obstacles (ennemis, projectiles et mines ennemies) jugée trop complexe.\\
@@ -154,7 +159,16 @@ La première étape de la démarche, si on ne compte pas la prise de contact, co
 
 \paragraph{}Pour commencer et durant 15 minutes, chaque participant devra exprimer selon lui quels sont les objectifs de l'application. A chaque prise de parole, l'intervenant marquera l'objectif sur un post-it par exemple, et développera sa pensée oralement avec le groupe. Ces objectifs peuvent être divers et variés : thérapeutiques, financiers, de publication ou marketing par exemple. 
 
-\paragraph{} Lorsque le temps est imparti ou qu'aucun nouvel objectif n'est ajouté, une nouvelle période de quinze minutes est lancée. Durant celle-ci, les participants doivent ensemble regrouper les objectifs précédemment énoncés par thème. Enfin, ils doivent choisir un maximum de trois objectifs considérés comme majeurs et principaux. Ce sont sur ces aspects que l'accent devra être mis au cours du processus de conception et de développement.
+\paragraph{} Pour donner un exemple, la figure~\ref{objectifs_ales} donne les principaux objectifs d'une séance de conception réalisée durant mon stage. Cette séance a eu lieu au Centre hospitalier d'Alès - Cévennes (le CHAC) avec des ergothérapeutes et des kinésithérapeutes, Antoine Seilles et moi-même. L'application envisagée a pour but d'aider des personnes, généralement âgées, étant tombées et ayant peur de rechuter, à remarcher normalement. Les objectifs marqués de rouge sont les objectifs critiques devant être atteints.
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 16cm, height=6cm]{images/objectifs_ales.png}
+	\caption{}
+	\label{objectifs_ales}
+\end{figure}
+
+\paragraph{} Lorsque le temps est terminé ou qu'aucun nouvel objectif n'est ajouté, une nouvelle période de quinze minutes est lancée. Durant celle-ci, les participants doivent ensemble regrouper les objectifs précédemment énoncés par thème. Enfin, ils doivent choisir un maximum de trois objectifs considérés comme majeurs et principaux. Ce sont sur ces aspects que l'accent devra être mis au cours du processus de conception et de développement.
 
 \paragraph{}En parallèle des deux premières étapes, l'équipe de conception pensera à noter tout utilisateur de l'application. On trouvera dans notre contexte des acteurs comme le patient, sa famille, le kiné, l'ergo ou le médecin par exemple.
 
@@ -164,17 +178,26 @@ La première étape de la démarche, si on ne compte pas la prise de contact, co
 	\subsubsection*{Comprendre les utilisateurs}
 La première partie de la séance de conception participative se concentre sur les objectifs et les impacts de l'application. Dans la seconde partie, on va maintenant se rapprocher 	des utilisateurs. Pour cela, les participants vont devoir imaginer une personne utilisatrice de l'application. Cette méthode permet de simuler un cas concret d'utilisation de l'application en rendant l'expérience bien plus crédible et vivante qu'avec l'impersonnel "utilisateur x". Il s'agit ici de s'inspirer d'une méthode marketing en créant une carte d'empathie.
 
-\paragraph{} Cette carte d'empathie va nous permettre de dresser le profil de l'utilisateur imaginé par le groupe et de l'enrichir de toute les informations pertinentes au contexte d'utilisation de l'application à concevoir. On cherchera ainsi à renseigner des informations comme les habitudes de la personne, ses interactions, ses objectifs et ses moyens.
+\paragraph{} Cette carte d'empathie va nous permettre de dresser le profil de l'utilisateur imaginé par le groupe et de l'enrichir de toute les informations pertinentes au contexte d'utilisation de l'application à concevoir. On cherchera ainsi à renseigner des informations comme les habitudes de la personne, ses interactions, ses objectifs et ses moyens. On pourra dessiner une carte pour différents profils d'utilisateurs.
 
-\paragraph{} Pour illustrer cette étape, voici en page~\pageref{empathie_elsa} la carte d'empathie d'Elsa , réalisée lors d'une séance de co-conception que j'ai menée au centre hospitalier d'Alès. L'application envisagée a pour but d'aider des personnes, généralement âgées, étant tombées et ayant peur de rechuter, à remarcher normalement.
-
+\paragraph{} Pour illustrer cette étape, voici en page~\pageref{empathie_elsa} la carte d'empathie d'Elsa , réalisée lors de la séance de co-conception que j'ai menée au centre hospitalier d'Alès. \\
+Une fois les cartes dessinées, la séance peut se terminer.
 
 \includepdf{images/empathie_elsa}
 \label{empathie_elsa}
-
 	
-	\subsubsection*{scénario d'utilisation}
+	\subsubsection*{Imaginer les cas d'utilisation}
+La suite de la méthode de conception vient se servir des résultats des premières étapes. Il s'agit d'imaginer les différents cas d'utilisation de l'application. On va chercher à couvrir la totalité des fonctionnalités souhaitées de l'application
+	
 	\subsubsection*{story board}
+	Software
+
+Storyboarding is used in software development as part of identifying the specifications for a particular software. During the specification phase, screens that the software will display are drawn, either on paper or using other specialized software, to illustrate the important steps of the user experience. The storyboard is then modified by the engineers and the client while they decide on their specific needs. The reason why storyboarding is useful during software engineering is that it helps the user understand exactly how the software will work, much better than an abstract description. It is also cheaper to make changes to a storyboard than an implemented piece of software.
+Benefits
+
+One advantage of using storyboards is that it allows (in film and business) the user to experiment with changes in the storyline to evoke stronger reaction or interest. Flashbacks, for instance, are often the result of sorting storyboards out of chronological order to help build suspense and interest.
+
+The process of visual thinking and planning allows a group of people to brainstorm together, placing their ideas on storyboards and then arranging the storyboards on the wall. This fosters more ideas and generates consensus inside the group.
 	
 	
  une séance de coconception à la fois avec arnaud et les ergo/kine d'ales.
