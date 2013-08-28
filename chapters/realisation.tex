@@ -90,7 +90,7 @@ Pour cette raison, toujours dans l'idée d'une adaptation de la difficulté, la 
 \subsection{Conception}
 	La seconde partie de mon travail fut consacrée à la proposition et à l'expérimentation de moyens de conception de jeux vidéo sérieux pour la santé. Pour cela, j'ai emprunté deux approches, répondant à des contextes un peu différents.
 	
-	\subsubsection{Ensemble d'outils d'aide à la conception de SG}
+	\subsubsection{Ensemble d'outils d'aide à la conception de SG} \label{boite_outils}
 	La première approche s'inscrit dans une problématique où l'on souhaite créer un serious game dont l'objectif sérieux est de l'ordre de l'aide à la réhabilitation motrice. Il s'agit ici de proposer un outil intégrant un certain nombre de connaissances utiles ou nécessaires à la conception de ce type de jeux. L'idée est de mettre à disposition des documents regroupant un maximum des informations qui seront utiles dans le processus de conception. Cela permettrait aux différents corps de métier impliqués dans le processus de conception d'avoir accès à des connaissances qui leur font défaut et d'avoir une vision globale des éléments en jeu.
 	
 		\paragraph{}
@@ -186,33 +186,54 @@ Une fois les cartes dessinées, la séance peut se terminer.
 \includepdf{images/empathie_elsa}
 \label{empathie_elsa}
 	
-	\subsubsection*{Imaginer les cas d'utilisation}
-La suite de la méthode de conception vient se servir des résultats des premières étapes. Il s'agit d'imaginer les différents cas d'utilisation de l'application. On va chercher à couvrir la totalité des fonctionnalités souhaitées de l'application
-	
-	\subsubsection*{story board}
-	Software
+	\subsubsection*{Imaginer et illustrer les cas d'utilisation}
+La suite de la méthode de conception vient se servir des résultats des premières étapes. Il s'agit d'imaginer les différents cas d'utilisation de l'application. On va chercher à couvrir la totalité des fonctionnalités souhaitées de l'application dans différents contextes d'utilisation. Pour cela, on imagine des scénarios courts dans lesquels on pourra mettre en scène les utilisateurs imaginés lors de la séance de conception participative.
 
-Storyboarding is used in software development as part of identifying the specifications for a particular software. During the specification phase, screens that the software will display are drawn, either on paper or using other specialized software, to illustrate the important steps of the user experience. The storyboard is then modified by the engineers and the client while they decide on their specific needs. The reason why storyboarding is useful during software engineering is that it helps the user understand exactly how the software will work, much better than an abstract description. It is also cheaper to make changes to a storyboard than an implemented piece of software.
-Benefits
+\paragraph{}Ces scénarios doivent comporter trois points~:
+\begin{enumerate}
+	\item un titre : permet de rapidement cerner la fonctionnalité ou le concept illustré.
+	\item une description de la scène : elle permet de visualiser les acteurs présents, l'action en cours et les interactions.
+	\item un commentaire : il s'agit d'expliquer ce qui se passe dans la scène, éventuellement comment on en est arrivé là, les objectifs en jeux ou l'intérêt de l'application ou du jeu.
+\end{enumerate}
 
-One advantage of using storyboards is that it allows (in film and business) the user to experiment with changes in the storyline to evoke stronger reaction or interest. Flashbacks, for instance, are often the result of sorting storyboards out of chronological order to help build suspense and interest.
+\paragraph{}Pour fournir des exemples de scénarios d'usage, je vais ici utiliser un travail issu d'un autre projet auquel j'ai participé. Il s'agissait ici de proposer une application pour aider à la rééducation de personnes lombalgiques. Le principal objectif est de faire bouger les patients : la douleur vient de l'inactivité et reprendre une activité physique est donc indispensable. Cette séance s'est déroulée notamment en présence d'un docteur en médecine spécialisé dans la lombalgie, Arnaud Dupeyron.
 
-The process of visual thinking and planning allows a group of people to brainstorm together, placing their ideas on storyboards and then arranging the storyboards on the wall. This fosters more ideas and generates consensus inside the group.
-	
-	
- une séance de coconception à la fois avec arnaud et les ergo/kine d'ales.
-	 
- Le pb c'est que j'ai rien qui dise clairement "pour tel exercice/objectif, fais plutot ce type de jeu avec tels contrôles. Du coup, est-ce que ca pourrait pas être une forme de perspective? disant que ça nécessiterait du travail et serait moins parfait qu'un truc personnalisé, mais ca permettrait de gagner du temps tout en étant mieux que ce qui existe actuellement. A l'inverse, la démarche que j'ai emprunté dans ma méthode semble mieux coller aux besoins, mais nécessite plus de travail.
- 
- bien expliquer si ces démarches sont différentes, complémentaires ou partiellement complémentaires, dans quels contextes elles s'appliquent et quels sont les compétences nécessaires à quels moments pour les mettre en place.
- Pensez aux perspectives de l'ordre de "ca serait bien d'éprouver la méthodologie sur un projet complet" , "il faudrait une équipe avec telles compétences"
-		\subsubsection{}
+\begin{quotation}
+	\emph{Slide Contexte} :\\
+	\textbf{Description} : Paul est dans son canapé. Un proche lui recommande de se reposer.\\
+	\textbf{Commentaire} : Il a mal au dos et est en arrêt maladie pour ça. Il aimerait ne plus avoir mal. Ses proches l’encouragent à se reposer, ne pas trop bouger.
+	\paragraph{}
+	\emph{Slide présentation par le médecin} :\\
+	\textbf{Description} : Cabinet médical, Paul est entre les mains de son médecin. Il fait des exercices devant une kinect et un ordinateur.\\
+	\textbf{Commentaire} : Le nouveau médecin qui va s’occuper du dos de Paul mesure les capacités de mouvement de Paul avec notre application. Il va conseiller à Paul de se remettre à bouger. Il lui déconseille d’être sédentaire et donc, il va lui recommander d’utiliser notre application chez lui afin de l’aider à se remettre en activité.
+	\paragraph{}
+	\emph{Slide suivi d’un patient} :\\
+	\textbf{Description} : le médecin est devant son ordinateur, il consulte le profil de Paul et visualise ses capacités.\\
+	\textbf{Commentaire} : l’application présente un bilan simplifié des capacités du patient. Notre application permet un suivi du patient par le médecin en remontant des informations sur l’endurance, la souplesse, la fréquence d’utilisation, des alertes … Mais le premier but de l’application c’est de faire bouger Paul.
+\end{quotation}
 
-	*conception participative avec Arnaud 
-		-impact mapping, carte d'empathie et scénarios d'usage et storyboard
-	*séance de conception participative à Alès (Rhabdomyolyse)
 	
-	-travail avec les thérapeutes
-	-répondre aux objectifs thérapeutique par un gamedesign
-		- hammer \& Planks et l'équilibre (voir rapport d'anais)
-	-ajustement de la difficulté et lien avec la thérapie : impact des paramètres en terme de difficulté (équilibre et dos?)
+	\subsubsection*{Création de storyboards}
+Les storyboards sont des organisateurs graphiques sous la forme d'illustrations ou d'images affichées dans un ordre chronologique dans le but de pré-visualiser des séquences futures. Le storyboarding est utilisé dans le développement de logiciels pour mieux identifier leurs spécifications et les différentes étapes de l'expérience de l'utilisateur.
+\paragraph{}
+Dans notre cas, les storyboards sont construites à partir des scénarios d'usage conçu à l'étape précédente. Elles aident les utilisateurs à comprendre comment exactement l'application doit être utilisée au moyen d'une mise en scène de ces utilisations. C'est aussi un moyen de personnaliser l'expérience et de rapprocher les futurs utilisateurs de l'application, en la rendant plus accessible.
+	
+	\subsubsection*{Résumé et résultats}	 
+Finalement, en quelques étapes bien définies, il est possible de passer d'une simple idée partagée à la production d'un document graphique mettant en scène toutes les possibilités d'utilisation de l'application idéale répondant aux principaux objectifs que l'on s'est fixés.
+
+\paragraph{} Cette méthode met un fort accent sur une conception collaborative de la part des différents acteurs et met l'utilisateur et les impacts au centre du processus de conception. D'un point du vue du développement, on choisira une méthodologie AGILE mettant l'accent sur des échanges réguliers entre l'équipe de développement et les utilisateurs précédemment cités, afin de vérifier que le projet reste bien en corrélation avec leurs besoins. Elle permet entre autres de partager les connaissances et les compétences des participants, ce qui contribue à la qualité globale de la conception.
+
+	\subsubsection{Différences et complémentarité des solutions}
+Les deux approches empruntées pour aider à la conception de jeux sérieux pour la santé sont donc bien différentes. La première cherche plutôt à définir et enregistrer des savoirs qui seront utiles dans le processus de conception. La seconde, propose une méthodologie permettant de dynamiser les échanges entre les acteurs afin de répartir les savoirs.
+
+\paragraph{} Il n'existe actuellement pas de méthode classique de conception spécifique à la création de serious games se distinguant par son efficacité. L'utilisation et la prise en compte de connaissances comme celles proposées en~\ref{boite_outils}, pourraient ainsi permettre de proposer des pistes intéressantes de conception. Si ce travail était poursuivi, en travaillant spécifiquement sur chaque type de jeu ou en enrichissant la base de contrôles possibles, il serait ainsi possible d'orienter efficacement la conception de l'application.
+
+\paragraph{} Par ailleurs les deux approches proposées sont aussi compatibles. L'intégration de savoirs, s'ils font défaut à l'équipe de conception, peut permettre d'enrichir la pensée et les solutions envisagées. C'est aussi une manière d'envisager d'autres approches, comme utiliser le contrôle comme lien entre les composantes médicales et ludiques. La méthode de conception participative présentée peut trouver sa place dans le processus de conception avant l'utilisation de l'ensemble des outils. Ceux-ci pourront être plus justement utilisés lors de la phase de développement du l'application, en compléments des documents produits pendant la conception participative.
+	
+
+%		\subsubsection{}
+%	
+%	-travail avec les thérapeutes
+%	-répondre aux objectifs thérapeutique par un gamedesign
+%		- hammer \& Planks et l'équilibre (voir rapport d'anais)
+%	-ajustement de la difficulté et lien avec la thérapie : impact des paramètres en terme de difficulté (équilibre et dos?)
