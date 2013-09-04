@@ -61,7 +61,7 @@
 	
 	%Plan
 	\begin{frame}{}
-		\tableofcontents
+		\tableofcontents[hideallsubsections]
 	\end{frame}
 	
 	\section{Introduction}
@@ -123,16 +123,16 @@
 	
 		\begin{frame}{Serious Games pour la rééducation}
 			\begin{exampleblock}{Objectifs et qualités}
-				- renforcer la motivation des patients.\\
-				- oublier que c'est du travail. \\
-				- augmenter le temps de travail.
+				• renforcer la motivation des patients.\\
+				• oublier que c'est du travail. \\
+				• augmenter le temps de travail.
 			\end{exampleblock}\pause
 			\begin{alertblock}{Un problème d'adaptation}
 			Il est nécessaire de prendre en compte :\\
-					- la pathologie et les capacités physiques du patient.\\
-					- les objectifs et contraintes thérapeutiques.\\
-					- son âge, son aisance avec les nouvelles technologies.\\
-					- son niveau de joueur.
+					• la pathologie et les capacités physiques du patient.\\
+					• les objectifs et contraintes thérapeutiques.\\
+					• son âge, son aisance avec les nouvelles technologies.\\
+					• son niveau de joueur.
 			\end{alertblock}
 		\end{frame}
 	
@@ -158,12 +158,13 @@
 				\end{enumerate}
 			\end{exampleblock}
 		\end{frame}		
-			
+				
+		\subsection{Ajustement des paramètres de H\&P}	
 		\begin{frame}{Ajustement des paramètres de jeu}
 				\begin{block}{Intérêts}
-					- Contraindre le joueur à effectuer certains mouvements.\\
-					- Varier le gameplay et donc maintenir la motivation.\\
-					- Suivre l'évolution du joueur.
+					• Contraindre le joueur à effectuer certains mouvements.\\
+					• Varier le gameplay et donc maintenir la motivation.\\
+					• Suivre l'évolution du joueur.
 				\end{block}
 			\includegraphics[width=10cm, height=4cm]{../images/comparatif_interface_rochers.png}
 		\end{frame}			
@@ -189,46 +190,108 @@
 		
 		\begin{frame}{Développement d'H\&P}
 			\begin{block}{Travail initial}
-				- Refactoring et extraction des paramètres.\\
-				- Création de fichiers de waves pour le mode survie.\\
-				- Correction de bugs et développement de fonctionnalités.
+				• Refactoring et extraction des paramètres.\\
+				• Création de fichiers de 'vagues' pour le mode survie.\\
+				• Correction de bugs et développement de fonctionnalités.
 			\end{block}
 			\begin{block}{Intégration des retours}
-				- Système d'aspiration des bonus et de halo.\\
-				- Ajustement de la GUI et des objets du jeu (taille, couleur)
+				• Système d'aspiration des bonus et de halo.\\
+				• Ajustement de la GUI et des objets du jeu (taille, couleur)
 			\end{block}
 			\begin{figure}
 				\includegraphics[width=5cm]{../images/test_lapeyronie_2.png}
 			\end{figure}			
 		\end{frame}
 		
+		\subsection{Outils d'aide à la conception}
 		\begin{frame}{Aide à la conception de jeux pour la santé}
 			\begin{exampleblock}{Faciliter le travail de conception}
-			- Fournir des informations utiles ou nécessaires à la conception.\\
-			- Avoir une vision globale des éléments en jeu.\\
-			- Proposer des pistes et encourager la création.
+			• Fournir des informations utiles ou nécessaires à la conception.\\
+			• Avoir une vision globale des éléments en jeu.\\
+			• Proposer des pistes et encourager la création.
 			\end{exampleblock}\pause
 			
 			\begin{block}{Acquisition des connaissances préalables}
-				- Analyse de l'existant.\\
-				- Connaissances médicales et enjeux thérapeutiques.\\
-				- Exploration des théories utiles aux SG.				
+				• Analyse de l'existant.\\
+				• Connaissances médicales et enjeux thérapeutiques.\\
+				• Exploration des théories utiles aux SG.				
 			\end{block}
 		\end{frame}
 	
-		\begin{frame}
-			- méthodo de conception participative\\
-			- conception lombalgie, verticalisation\\
-			- poursuite du travail de TER : fugl meyer informatique
+		\begin{frame}{Productions : coté jeu}
+			\begin{block}{Classification des types de jeux vidéo (par gameplay)}
+				Informer des possibilités de gameplays classiques et fiables.\\
+				Permet de faire un premier rapprochement entre l'enjeu sérieux et la dimension ludique.
+			\end{block}\pause
+			\begin{block}{Propositions de contrôles naturels}
+			Passer par les mouvements pour faire le lien entre le jeu et les exercices de rééducation.\\
+			Mettre en lumière les jeux adaptés à un contrôle naturel.\\
+			Proposer les contrôles les plus adaptés.
+			\end{block}			
+		\end{frame}
+		
+		\begin{frame}{Productions : côté sérieux}
+			\begin{block}{Connaissances médicales}
+			Explication ou vulgarisation des objectifs thérapeutiques, des pathologies ou des mécanismes médicaux en jeu.\\
+			Comprendre la réhabilitation et le quotidien des patients et des thérapeutes.
+			\end{block}
+		\end{frame}	
+		
+		\begin{frame}{Productions : côté sérieux}
+			\begin{figure}
+			\includegraphics[width=10cm, height=6.5cm]{../images/objectifs_moteurs.png}
+			\caption{Classement des objectifs thérapeutiques en rééducation}
+			\end{figure}
+		\end{frame}
+			
+		\subsection{Méthodologie de conception de SG}
+		\begin{frame}{Méthodologie de conception}
+			\begin{exampleblock}{Objectifs}
+				• Concevoir des SG pour la santé.\\ \pause
+				• Obtenir des jeux efficaces et qui seront joués.\\ \pause
+				• Améliorer la conception : temps, qualité, réutilisabilité, satisfaction 
+			\end{exampleblock} \pause
+			\begin{alertblock}{Conception participative}
+				• Intégrer au mieux les besoins des thérapeutes.\\
+				• Intégrer l'expertise de différents domaines dès la phase de conception.\\
+				• Se concentrer sur les objectifs et les impacts à réaliser.
+			\end{alertblock}
+		\end{frame}			
+		
+		\begin{frame}{Étapes de conception}
+		\setbeamercovered{transparent}
+			\begin{block}{Quoi?}
+				\begin{enumerate}
+					\item<1> Déterminer les objectifs : Pourquoi, Qui, Comment et Quoi? 
+					\item<2> Comprendre les utilisateurs.
+					\item<3> Imaginer les cas d'utilisation.
+					\item<4> Illustrer et personnaliser l'utilisation de l'application.
+				\end{enumerate}
+			\end{block}
+			\begin{block}{Comment?}
+				\begin{enumerate}
+					\item<1> Séance de conception participative.
+					\item<2> Création d'une carte d'empathie.
+					\item<3> Écriture des cas d'utilisation.
+					\item<4> Création de storyboards.
+				\end{enumerate}
+			\end{block}
+			\setbeamercovered{invisible}
+		\end{frame}
+		
+		\begin{frame}{Application de la méthodologie}
+			• conception lombalgie, verticalisation\\
+			• poursuite du travail de TER : fugl meyer informatique
 		\end{frame}
 	
 	\section{Perspectives}
 		\begin{frame}
 		 	- IT : Enregistrer ses propres config, ajouter de nouveaux jeux, proposer des sets de paramètres par objectif/exercices\\
-			- publication de mes recherches\\
+			- publication de mes recherches : trouver où\\
 			- poursuite du travail, amélioration des outils, enrichissement\\
 			- évaluation et comparaison de la méthodologie\\
-			- poursuite en travail de thèse
+			- poursuite en travail de thèse : serious games, difficulté, cifre avec natkin
+			- mission chez un kiné pour évaluation de jeu et game design.
 		\end{frame}
 	
 	\section{Conclusion}
@@ -236,6 +299,7 @@
 			Travail sur un projet d'entreprise en équipe.
 			Aspect R\&D, en solo puis en équipe pluridisciplinaire.
 			Acquisition de beaucoup de connaissances, de contacts.
+			trouver ce que je suis venu chercher en accord avec mes principes et souhaits
 		\end{frame}
 
 \end{document}
