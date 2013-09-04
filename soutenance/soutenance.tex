@@ -1,11 +1,38 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
-\usetheme{Warsaw}%{Berkeley} Madrid
+\usetheme{Darmstadt}%{Berkeley} Madrid  Warsaw  Darmstadt
 \usecolortheme{Dolphin} %dolphin, lily, orchid, structure sidebartab wolverine crane
 \title[Conception et adaptation de Serious Games]{Serious games pour la santé :\\ Méthodologie de conception et adaptation de la difficulté}
 \author{MÉLIA Geoffrey - Master 2 Informatique}
 \institute{Université Montpellier II - NaturalPad}
 \date{05 septembre 2013}
+
+% pour supprimer les symboles de navigation
+\setbeamertemplate{navigation symbols}{}
+
+    %la barre d'info
+    \setbeamercolor*{author in head/foot}{parent=palette tertiary}
+    \setbeamercolor*{title in head/foot}{parent=palette secondary}
+    \setbeamercolor*{date in head/foot}{parent=palette primary}
+    \setbeamercolor*{page in head/foot}{parent=palette tertiary}
+    \defbeamertemplate*{footline}{infolines theme}
+    {
+       \leavevmode%
+         \hbox{%
+           \begin{beamercolorbox}[wd=.35\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+             \usebeamerfont{author in head/foot}\insertshortauthor~~
+             \end{beamercolorbox}%
+             \begin{beamercolorbox}[wd=.42\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+             \usebeamerfont{title in head/foot}\insertshorttitle
+             \end{beamercolorbox}%
+             \begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+             \usebeamerfont{date in head/foot}\insertshortdate{}%\hspace*{2em}
+           \end{beamercolorbox}
+           \begin{beamercolorbox}[wd=.09\paperwidth,ht=2.25ex,dp=1ex,center]{page in head/foot}
+            \insertframenumber / \inserttotalframenumber
+           \end{beamercolorbox}
+         }%
+    }
 
 %\addtobeamertemplate{footline}{\hfill\insertframenumber/\inserttotalframenumber\hspace{2em}\null}
 
@@ -17,16 +44,6 @@
 }
 
 \begin{document}
-	\setbeamertemplate{navigation symbols}{} % supprimer les symboles de navigation
-	%\setbeamercovered{dynamic} permet de griser les éléments en attente de \pause
-	\addtobeamertemplate{footline}{\hfill\insertframenumber/\inserttotalframenumber}
-%	\addtobeamertemplate{footline}
-%	{
-%		\begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
-%			\usebeamerfont{section in head/foot}
-%			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
-%		\end{beamercolorbox}%
-%	}
 		
 	\begin{frame}
 		\titlepage
@@ -61,19 +78,20 @@
 				%\caption{A gauche : Formation du personnel médical aux outils déployés. A droite : Terminal avec BebeOnline}	
 			\end{figure}
 		\end{frame}	
-	
-		\begin{frame}{Hammer \& Planks}
-			\begin{block}{Un serious game pour la santé}
-				• Un jeu vidéo sérieux d'aide à la réhabilitation motrice.\\
-				• Adapté aux personnes hémiplégiques : équilibre, membres supérieurs et tronc.
-			\end{block}
-			
-			\begin{figure}
-				\includegraphics[width=5cm]{../images/test_lapeyronie_2.png}
-			\end{figure}
-		\end{frame}	
 		
-		\begin{frame}{Travail d'étude et de recherche : \emph{ZigFugl Meyer}}
+		\begin{frame}{Hammer \& Planks}
+			\begin{alertblock}{Un serious game pour la santé}
+				• Un jeu vidéo sérieux d'aide à la réhabilitation motrice.\\
+				• Adapté aux personnes hémiplégiques~: équilibre, membres supérieurs et tronc.\\
+				• Jouable avec la la WiiBoard et la Kinect (main ou torse).
+			\end{alertblock}
+			\begin{exampleblock}{Un jeu vidéo ludique}
+				• Existence d'une version grand public, au gameplay identique.\\
+				• Plusieurs modes de jeu, différents ennemis et un univers riche et humoristique.
+			\end{exampleblock}	
+		\end{frame}
+		
+		\begin{frame}{TER : \emph{ZigFugl Meyer}}
 			\begin{minipage}{0.40\linewidth}
 				\begin{figure}
 					\includegraphics[width=4.2cm]{../images/zigfugl-meyer_1.png}\\
@@ -81,7 +99,7 @@
 				\end{figure}
 			\end{minipage}
 			\begin{minipage}{6cm}%{0.55\linewidth}
-				Utilisation de l'informatique pour l'évaluation de capacités motrices (Fugl Meyer assessment). 
+				Idée : utiliser l'informatique pour l'évaluation de capacités motrices (Fugl Meyer assessment). 
 					\begin{itemize}
 						\item Utilisation de la Kinect comme interface naturelle.
 						\item Expérimentation d'une gamification du test.
@@ -124,13 +142,21 @@
 		
 	\section{Proposition et réalisations}	
 		\begin{frame}{Propositions}
-			\begin{block}{Axes de travail}			
+		Adaptation des SG pour les personnes âgées et/ou hémiplégiques.
+			\begin{block}{Approches}
+				\begin{enumerate}
+					\item Tests de H\&P.
+					\item Recherche documentaire
+					\item Enquête de terrain
+				\end{enumerate}
+			\end{block}\pause
+			\begin{exampleblock}{Axes de travail}			
 				\begin{enumerate}
 					\item Ajuster les paramètres de H\&P via l'interface thérapeute.
 					\item Proposition d'outils d'aide à la conception de jeux pour la santé.
 					\item Suggestion d'une méthodologie de conception.
 				\end{enumerate}
-			\end{block}
+			\end{exampleblock}
 		\end{frame}		
 			
 		\begin{frame}{Ajustement des paramètres de jeu}
@@ -161,11 +187,26 @@
 			\setbeamercovered{invisible} 
 		\end{frame}			
 		
+		\begin{frame}{Développement d'H\&P}
+			\begin{block}{Travail initial}
+				- Refactoring et extraction des paramètres.\\
+				- Création de fichiers de waves pour le mode survie.\\
+				- Correction de bugs et développement de fonctionnalités.
+			\end{block}
+			\begin{block}{Intégration des retours}
+				- Système d'aspiration des bonus et de halo.\\
+				- Ajustement de la GUI et des objets du jeu (taille, couleur)
+			\end{block}
+			\begin{figure}
+				\includegraphics[width=5cm]{../images/test_lapeyronie_2.png}
+			\end{figure}			
+		\end{frame}
+		
 		\begin{frame}{Aide à la conception de jeux pour la santé}
-			\begin{exampleblock}{Faciliter le travail de conception :}
-			Fournir des informations utiles ou nécessaires à la conception.\\
-			Avoir une vision globale des éléments en jeu.\\
-			Proposer des pistes et encourager la création.
+			\begin{exampleblock}{Faciliter le travail de conception}
+			- Fournir des informations utiles ou nécessaires à la conception.\\
+			- Avoir une vision globale des éléments en jeu.\\
+			- Proposer des pistes et encourager la création.
 			\end{exampleblock}\pause
 			
 			\begin{block}{Acquisition des connaissances préalables}
