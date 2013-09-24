@@ -18,7 +18,13 @@
 \usepackage[colorlinks=true]{hyperref} % permet l'utilisation d'hyperliens, et active leur coloration ( a definir)
 \usepackage{pdfpages} %% permet d'importe des pages pdf
 \usepackage[francais]{babel}
+
+%GLOSSAIRE
 %\usepackage{glossary}
+\usepackage[toc]{glossaries}
+\makeglossaries
+\input{glossaire}
+
 
 %COULEURS
 \usepackage{color} % permet de définir des couleurs pour les utiliser localement
@@ -47,10 +53,6 @@
 \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
 
-%\input{glossaire}
-%\makeglossary
-
-
 
 \title{Rapport de stage}
 \author{Mélia Geoffrey}
@@ -74,11 +76,11 @@
 	\put(-30,-550){\includegraphics[scale=0.8]{images/logo_um2.png}}
 	\put(280,-570){\includegraphics[scale=0.6]{images/logo_naturalpad.png}}
 	
-	\put(-30,-120){\textsc{\LARGE{Méthodologie de conception de jeux vidéo }}}
-	\put(40,-150){\textsc{\LARGE{sérieux à but thérapeutique}}}
+	\put(-30,-120){\textsc{\LARGE{Vers une méthode de conception de jeux}}}
+	\put(10,-150){\textsc{\LARGE{vidéo sérieux à but thérapeutique}}}
 	\put(100,-180){\textsc{\large{et adaptation de la difficulté}}}
 	
-	\put(-30,-360){\textsc{\large{tuteur universitaire : Vincent Boudet}}}
+	\put(-30,-360){\textsc{\large{tuteurs universitaires : Vincent Boudet \& Nancy Rodriguez}}}
 	\put(-30,-400){\textsc{\large{effectué chez la société NaturalPad}}}
 	\put(-30,-420){\textsc{\large{sous la direction de Antoine Seilles}}}
 \end{picture}
@@ -96,7 +98,6 @@
 \definecolor{red}{rgb}{1,0,0}
 
 \newpage 
-%\printglossary
 
 \part{Rapport de stage}
 	\section{Introduction}
@@ -139,11 +140,10 @@
 	\input{chapters/conclusion}
 	
 	\newpage
-	%\printglossary
+	\printglossaries
 %	\addcontentsline{toc}{chapter}{Glossary}
 
 	\newpage
-	%\addcontentsline{toc}{chapter}{Bibliographie et références}
 	\bibliography{rapport}
 
 \newpage
@@ -156,12 +156,7 @@
 	
 	%\section{Proposition de contrôles naturels pour des jeux existants} \label{propositions_controles}
 	\includepdf[pages=-]{chapters/propositions_controles}
+
 	
-%	\section{Gamejam 1}
-%	\input{chapters/gamejam_one}
-%	
-%	\section{Gamejam 2}
-%	\input{chapters/gamejam_two}
-%
 %Voir dans quelle mesure il peut être intéressant de mettre mes comptes rendus d'entretien. Dans des annexes séparées éventuellement.
 \end{document}
