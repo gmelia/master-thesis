@@ -77,6 +77,6 @@ Une première séance de conception a lieu en début de projet : celle-ci regrou
 	\label{projet_info}
 \end{figure}
 
-\paragraph{}Par ailleurs, plusieurs séances peuvent avoir lieues tout au long du projet, afin de vérifier si les besoins ont évolués et si le développement actuel est effectivement en accord avec ceux-ci. Les utilisateurs aideront aussi l'équipe de recherche et développement à juger de la pertinence des solutions apportées.
+\paragraph{}Par ailleurs, plusieurs séances peuvent avoir lieu tout au long du projet, afin de vérifier si les besoins ont évolués et si le développement actuel est effectivement en accord avec ceux-ci. Les utilisateurs aideront aussi l'équipe de recherche et développement à juger de la pertinence des solutions apportées.
 \paragraph{}
 D'un point de vue du développement, on notera que ce type de conception s'accorde parfaitement avec une méthodologie AGILE, et notamment la méthode SCRUM qui consiste en de courtes périodes de développement entre lesquelles on met en relief l'avancement par rapport au projet global.

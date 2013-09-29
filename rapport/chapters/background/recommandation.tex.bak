@@ -22,10 +22,10 @@ Les passionnés de musique qui cherchent activement préféreront de la similari
 Pandora est principalement construit sur (1), last.fm est (2) et (3), Musicovery (4). Deezer avec ces 30 millions de playlists a un actif considérable à exploiter en (3) et (4).
 
  		\subsubsection*{Les différents types de recommandation}
-Plusieurs techniques de recommandation ont été proposées : basées sur le contenu, sur des connaissances ou encore des techniques dîtes collaboratives ou sociales. Pour de meilleurs résultats, certaines de ces techniques peuvent être utilisées conjointement dans des systèmes de recommandation hybrides.
+Plusieurs techniques de recommandation ont été proposées\cite{Burk02} : basées sur le contenu, sur des connaissances ou encore des techniques dîtes collaboratives ou sociales. Pour de meilleurs résultats, certaines de ces techniques peuvent être utilisées conjointement dans des systèmes de recommandation hybrides.
 
 	\paragraph{\emph{Propriétés des systèmes de recommandation} \\ \quad}
-Les systèmes de recommandation possèdent :
+Les systèmes de recommandation possèdent\cite{Burk02}~:
 \begin{itemize}
 	\item des données de base : données que le système possède avant même de commencer la recommandation
 	\item des données d’entrée : données que l’utilisateur fournit au système dans le but que ce dernier lui fournissent des recommandations.
