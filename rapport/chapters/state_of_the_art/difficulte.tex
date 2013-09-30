@@ -42,14 +42,14 @@ L’équilibrage dynamique, ou ajustement dynamique, consiste à modifier un cer
 L'adaptation de la difficulté dans les jeux vidéo est une fonctionnalité importante qui permet d’individualiser et de contextualiser l'expérience de jeu. Dans le cas de serious games, elle permet également de gérer la frustration des joueurs-apprenants tout en augmentant leurs motivations [Hocine et al 11]. L'individualisation et la contextualisation du jeu pour chaque joueur-apprenant, notions déjà définies par [Gee, 05] comme importantes pour l'apprentissage, ont pour conséquence d'augmenter sa satisfaction tout en améliorant l’efficacité de la formation.
 				
 		\paragraph{}
-La génération dynamique d’IA permet de modifier le niveau de difficulté en créant de nouvelles entités avec un niveau et des règles donnés, ou en modifiant des paramètres du gameplay en cours de jeu.\\
+La génération dynamique d’\gls{ia} permet de modifier le niveau de difficulté en créant de nouvelles entités avec un niveau et des règles donnés, ou en modifiant des paramètres du gameplay en cours de jeu.\\
 Par exemple, Andrade et al utilisent l’apprentissage dynamique pour ajuster la difficulté. L’algorithme consiste à utiliser une base de couples (action, état de jeu) associés chacun à une valeur d’efficacité, afin que le jeu choisisse pour chaque situation un comportement de l’efficacité souhaitée.			
 				
 		\paragraph{\emph{Systèmes adaptables VS systèmes auto-adaptatifs} \\ \quad} 
 L’adaptation peut être définie comme une caractéristique exprimée au niveau d’un système, dans notre cas un système informatique, qui reflète sa capacité à se modifier structurellement en réaction à certains évènements bien identifiés (Andresen K. et al, 2005). Nous parlerons de système adaptable lorsque l’intervention humaine est nécessaire pour enclencher le processus de modification et de système auto-adaptatif si aucune intervention extérieure n'est nécessaire (Moisuc B., 2001)
 
 \paragraph{}
-Levieux précise que la génération dynamique d’IA permet de modifier le niveau de difficulté en créant de nouvelles entités avec un niveau et des règles donnés, ou en modifiant des paramètres du gameplay en cours de jeu.\\
+Levieux précise que la génération dynamique d’\gls{ia} permet de modifier le niveau de difficulté en créant de nouvelles entités avec un niveau et des règles donnés, ou en modifiant des paramètres du gameplay en cours de jeu.\\
 Par exemple, Andrade et al utilisent l’apprentissage dynamique pour ajuster la difficulté. L’algorithme consiste à utiliser une base de couples (action, état de jeu) associés chacun à une valeur d’efficacité, afin que le jeu choisisse pour chaque situation un comportement de l’efficacité souhaitée.
 
 		\paragraph{\emph{Adaptation de la difficulté dans les jeux sérieux} \\ \quad}
@@ -64,7 +64,7 @@ Contribuer à l'acceptation et à l'utilisation des jeux sérieux constitue un e
 \end{itemize}
 
 \paragraph{}
-Afin d'évaluer et de comparer les différents systèmes, ils utilisent un système d'évaluation des techniques d'adaptation intéressant et très parlant du fait qu'il repose sur un modèle MVC (voir figure \ref{criteres_adaptation}).
+Afin d'évaluer et de comparer les différents systèmes, ils utilisent un système d'évaluation des techniques d'adaptation intéressant et très parlant du fait qu'il repose sur le patron de conception \gls{mvc} (voir figure \ref{criteres_adaptation}).
 
 \begin{figure}[!hbtp]
 	\centering
@@ -74,10 +74,10 @@ Afin d'évaluer et de comparer les différents systèmes, ils utilisent un syst�
 \end{figure}
 
 	\paragraph{Périmètre d'adaptation\\}
-Le périmètre de l'adaptation identifie le périmètre dans lequel l'adaptation est appliquée, selon le modèle MVC. 
+Le périmètre de l'adaptation identifie le périmètre dans lequel l'adaptation est appliquée, selon le modèle \gls{mvc}. 
 \begin{itemize}
-	\item \emph{Adaptation de la présentation (la Vue)}. L'adaptation peut donc avoir lieu au niveau de l'interface, du son ou de feedbacks envers l'utilisateur. Dans Hammer \& Planks, nous avons ainsi rendu possible la modification de ces paramètres : ajustement du volume de la musique ou des bruitages, contraste, taille des objets, vitesse de jeu et possibilité de désactiver les éléments cosmétiques facultatifs au jeu (animation de la mer, effets visuels etc.).
-		\item  \emph{Adaptation du contrôle} : ce niveau englobe les règles du jeu et les règles métier qui spécifient la dynamique du jeu (ou le gameplay) en réaction aux actions des joueurs. C'est dans ce niveau que l'on adaptera le niveau de difficulté du jeu. Suite à mon travail sur le jeu Hammer \& Planks, il est possible de modifier le nombre et le type d'ennemis que doit affronter le joueur, la vitesse du jeu, les propriétés des personnages (joueur ou ennemis) ou encore la fréquence des obstacles par exemple.
+	\item \emph{Adaptation de la présentation (la Vue)}~: l'adaptation peut donc avoir lieu au niveau de l'interface, du son ou de feedbacks envers l'utilisateur. Dans Hammer \& Planks, nous avons ainsi rendu possible la modification de ces paramètres~: ajustement du volume de la musique ou des bruitages, contraste, taille des objets, vitesse de jeu et possibilité de désactiver les éléments cosmétiques facultatifs au jeu (animation de la mer, effets visuels etc.).
+		\item  \emph{Adaptation du contrôle}~: ce niveau englobe les règles du jeu et les règles métier qui spécifient la dynamique du jeu (ou le gameplay) en réaction aux actions des joueurs. C'est dans ce niveau que l'on adaptera le niveau de difficulté du jeu. Suite à mon travail sur le jeu Hammer \& Planks, il est possible de modifier le nombre et le type d'ennemis que doit affronter le joueur, la vitesse du jeu, les propriétés des personnages (joueur ou ennemis) ou encore la fréquence des obstacles par exemple.
 		\item  \emph{Adaptation du contenu (le Modèle)} : l'adaptation à ce niveau modifie dynamiquement soit les schémas de données utilisés ou bien le contenu. L'adaptation s'efforce donc de produire un contenu lié au contexte de jeu et aux compétences des joueurs. Nous pouvons citer à titre d'exemple la génération automatique des dialogues et textes narratifs (Barry G., 2007) ou d'ambiance sonore (Chen Y et al, 2006)
 \end{itemize} 
 
@@ -95,8 +95,8 @@ Ce sont les éléments sur lesquels repose la prise de décision du processus d'
 	\item \emph{Explicite }: la technique d'adaptation utilise des modèles explicites comme un moteur de règles logiques, une matrice de décision ou des algorithmes d’IA.
 \end{itemize}
 	
-	\paragraph{Adaptation Mono ou Multi-joueurs\\}
-Contrairement aux jeux mono-joueur, l'adaptation dans un système multi-joueurs doit prendre en compte l'aspect collaboratif et l'hétérogénéité entre les joueurs tout  en maintenant une cohérence globale du jeu.
+	\paragraph{Adaptation Mono ou Multi-joueur\\}
+Contrairement aux jeux mono-joueur, l'adaptation dans un système multijoueur doit prendre en compte l'aspect collaboratif et l'hétérogénéité entre les joueurs tout  en maintenant une cohérence globale du jeu.
 	
 	\paragraph{\emph{Tour d'horizon de systèmes d'ajustement dynamiques dans les jeux vidéo}	 \\ \quad}
 Durant son travail sur la difficulté dans les jeux vidéo, Levieux se propose d'étudier les différentes solutions d’équilibrage dynamique qui ont été mis en place dans le jeu vidéo. Bien que de tels systèmes, de par leur aspect automatique, ne nous seront pas directement utiles, il peut être intéressant d'en connaître les principales mises en œuvre. On distingue plusieurs types de solutions~: 
@@ -104,25 +104,25 @@ Durant son travail sur la difficulté dans les jeux vidéo, Levieux se propose d
 	\item l’apprentissage par renforcement [Sutton 98]~:
 	\begin{itemize}
 		\item jeux de combat : [Andrade 05], [Graepel 04]
-		\item RTS : [Madeira 04], [Madeira 06], [Ula 05]
-		\item FPS : [Lee-Urban 08]
+		\item \gls{rts} : [Madeira 04], [Madeira 06], [Ula 05]
+		\item \gls{fps} : [Lee-Urban 08]
 	\end{itemize}
 	\item le scripting dynamique, qui calcule des préférences à partir de règles écrites par le designer~:
 	\begin{itemize}
 		\item jeux d’aventure : Neverwinter Nights - Bioware
-		\item RTS : Wargus [Spronck 05], [Spronck 06], [Spronck 08], [Timuri 07], [Ludwig 07]
+		\item \gls{rts} : Wargus [Spronck 05], [Spronck 06], [Spronck 08], [Timuri 07], [Ludwig 07]
 	\end{itemize}
 		\item évolution génétique et réseau de neurones (l’un et/ou l’autre)~:
 	\begin{itemize}
 		\item jeux d’actions [Demasi 05], [Spronck 02]
-		\item RTS : [Ponsen 05], [Agogino 00]
-		\item FPS : [Cole 04], [Thurau 03]
+		\item \gls{rts} : [Ponsen 05], [Agogino 00]
+		\item \gls{fps} : [Cole 04], [Thurau 03]
 		\item jeux de sport : Fifa 99 -EA Games [Chan 04]
 		\item puzzle : Tetris - Nintendo [Bohm 05]
 		\item réalité virtuelle : [Yannakakis 09], [Yannakakis 07]
 	\end{itemize}
-		\item algorithmes de champs potentiels pour comportements stratégiques dans les FPS [Thurau 04]
-		\item raisonnement au cas par cas dans les RTS : [Aha 05]
+		\item algorithmes de champs potentiels pour comportements stratégiques dans les \gls{fps} [Thurau 04]
+		\item raisonnement au cas par cas dans les \gls{rts}~: [Aha 05]
 \end{enumerate}
 
 	\subsubsection*{Comparaison avec les besoins de NaturalPad}
