@@ -12,7 +12,7 @@ Notons que le niveau du joueur peut aussi varier à la baisse, si il ne joue pas
 \paragraph{}L’effort du joueur n’est pas directement mesurable à partir de l’historique de jeu, mais ses résultats le sont. Le problème c’est que l’effort n’est pas normalisé et dépend de chaque style de jeu. La difficulté réside donc dans une relation entre un joueur et le défi qu’il doit relever. La difficulté est en effet relative aux capacités des joueurs : nous n’éprouvons pas tous les mêmes difficultés pour les mêmes jeux ni aux mêmes endroits. Ce qui signifie qu’il faut définir le niveau de capacité des joueurs pour évaluer le niveau de difficulté du jeu.\\
 La difficulté d’un problème n'est donc pas uniquement sa complexité : c’est un point de vue humain sur un problème. Une solution est de mesurer les échecs et leur évolution dans un jeu, le taux d’échec étant le résultat visible du niveau de difficulté pour une personne.\\
 
-G. Levieux précise donc dans sa définition de la difficulté, qu’il est important de prendre en compte son aspect relationnel avec le joueur et introduit alors les notions de difficulté absolue et relative (figure \ref{evolution_difficulte})~:
+Levieux précise donc dans sa définition de la difficulté, qu’il est important de prendre en compte son aspect relationnel avec le joueur et introduit alors les notions de difficulté absolue et relative (figure \ref{evolution_difficulte})~:
 	\begin{itemize}
 		\item la difficulté absolue d’un jeu décrit l’effort que doit fournir un joueur type, aux capacités statiques, pour atteindre les objectifs que son gameplay propose. 
 		\item la difficulté relative d’un jeu décrit l’effort que doit fournir le joueur, dont les capacités évoluent tout au long du jeu, pour atteindre les objectifs que son gameplay propose.
@@ -31,27 +31,28 @@ G. Levieux précise donc dans sa définition de la difficulté, qu’il est impo
 		\subsubsection{Types de difficulté}
 Lorsqu'on pense aux jeux vidéo, on envisage naïvement deux types de difficultés : la difficulté de compréhension, et la difficulté d’exécution. Autrement dit, des jeux où il est difficile de savoir ce qu’il faut faire, et d’autres où il est difficile de réussir à le faire. En fait, tout jeu relève à la fois des deux types de difficultés, du moins dans une certaine mesure. C’est d’ailleurs un moyen de différencier un jeu \gls{casual} (un peu des deux difficultés) d’un jeu \gls{hardcore} (une des deux ou les deux, mais bien plus conséquentes). Cependant, ces deux types de difficultés ne s’opposent pas de manière binaire. Les jeux à haute difficulté d’exécution vont souvent être des jeux basés sur un gameplay classique mais en une version très difficile et poussée, alors que les jeux à haute difficulté de compréhension vont relever soit de leur propre genre, soit d’un genre nouveau unique.
 
+\paragraph{}
+Durant sa thèse, Levieux\cite{Levi11} a tenté de mesurer le niveau de difficulté de plusieurs jeux, comme \emph{PacMan} (qui dépend directement de la vitesse de déplacement du joueur et des fantômes). En s’inspirant d’un modèle de traitement de l’information, il a identifié trois niveaux de difficulté~:
+	\begin{itemize}
+		\item la \emph{difficulté sensorielle} qui correspond à la perception de l’univers
+		\item la \emph{difficulté logique} se référant à la compréhension de l’univers
+		\item et la \emph{difficulté motrice}, en rapport avec l'exécution physique de l’action à effectuer.
+\end{itemize}
+
 \begin{figure}[!hbtp]
 	\centering
 	\includegraphics[width=\linewidth]{images/dimensions_difficulte.png}
-	\caption{Dimensions de difficulté}
+	\caption{Dimensions de difficulté\cite{Levi11}}
 	\label{dimensions_difficulte}
 \end{figure}
 
+\paragraph{}Levieux \cite{Levi11} précise quel est l'effort ou la compétence dont doit faire le preuve le joueur pour chacune de ces trois dimensions~:
+	\begin{itemize}
+		\item difficulté sensorielle : décrit l’effort que doit fournir le joueur pour obtenir de nouvelles informations sur l’état de l’univers du jeu. Ces informations nouvelles correspondent à toute information que le joueur ne peut pas déduire des faits et règles logiques qu’il connaît déjà.
+		\item difficulté logique : décrit l’effort que doit fournir le joueur pour exploiter les informations dont il dispose, c’est-à-dire comprendre le fonctionnement de l’univers par induction, et choisir la prochaine action à réaliser par déduction.
+		\item difficulté motrice : décrit le niveau de précision spatiale et temporelle dont le joueur doit faire preuve lorsqu’il exécute une action.
+\end{itemize}
 \paragraph{}
-Durant sa thèse, Guillaume Levieux\cite{Levi11} a tenté de mesurer le niveau de difficulté de plusieurs jeux, comme \emph{PacMan}(qui dépend directement de la vitesse de déplacement du joueur et des fantômes). En s’inspirant d’un modèle de traitement de l’information, il a identifié trois niveaux de difficulté~:
-	\begin{itemize}
-		\item la difficulté sensorielle qui correspond à la perception de l’univers,
-		\item la difficulté logique se référant à la compréhension de l’univers,
-		\item et la difficulté motrice, en rapport avec l'exécution physique de l’action à effectuer.
-\end{itemize}
-
-\paragraph{}Guillaume Levieux \cite{Levi11} définit donc trois types de difficultés dans le jeu vidéo :
-	\begin{itemize}
-		\item la difficulté sensorielle : décrit l’effort que doit fournir le joueur pour obtenir de nouvelles informations sur l’état de l’univers du jeu. Ces informations nouvelles correspondent à toute information que le joueur ne peut pas déduire des faits et règles logiques qu’il connaît déjà.
-		\item la difficulté logique : décrit l’effort que doit fournir le joueur pour exploiter les informations dont il dispose, c’est à dire comprendre le fonctionnement de l’univers par induction, et choisir la prochaine action à réaliser par déduction.
-		\item la difficulté motrice : décrit le niveau de précision spatiale et temporelle dont le joueur doit faire preuve lorsqu’il exécute une action.
-\end{itemize}
 A titre d’exemple, on peut associer un type de jeu par type de difficulté. Les jeux d’aventure se basent essentiellement sur la difficulté sensorielle, les jeux de stratégie sur la difficulté logique, et les jeux d’action sur la difficulté motrice. Bien sur, chaque jeu est composé de chacune des trois dimensions, mais exploitées dans des proportions différentes.
 		
 		\paragraph{\emph{Punitivité}\\ \quad}

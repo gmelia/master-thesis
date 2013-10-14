@@ -137,13 +137,26 @@
 	\bibliography{rapport}
 
 \newpage
-	\part{État de l'art} \appendix
+	\part{État de l'art} \appendix	
 	\input{chapters/state_of_the_art/serious_games}
 	\input{chapters/state_of_the_art/rehabilitation_et_serious_games}
 	\input{chapters/state_of_the_art/difficulte}
 	\input{chapters/state_of_the_art/rehabilitation}
 	\input{chapters/state_of_the_art/conception}
 
+	\part{Annexes}\appendix	
+	\addcontentsline{toc}{section}{Types de jeux vidéo classés par Gameplay}
+		%\section{Types de jeux vidéo classés par Gameplay}
+\pagebreak
+\makeatletter \label{types_jeux}
+\includepdf[pages=-,picturecommand={%
+            \setlength{\@tempdimb}{.5\paperwidth}%
+            \setlength{\@tempdimc}{3.5cm}%
+            \setlength{\unitlength}{1pt}%
+            \put(\strip@pt\@tempdimb,\strip@pt\@tempdimc){%
+        \makebox (0,0){\thepage}}%
+}]{chapters/types_jeux_video}
+\makeatother
 	%\section{Esquisse d'énumération des éléments d'un jeu et association avec les théories cognitives et comportementales}
 %	\label{matching}
 %	\includepdf[pages=-]{chapters/matching_objets_et_theories_v1}

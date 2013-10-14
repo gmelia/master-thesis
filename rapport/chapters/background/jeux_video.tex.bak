@@ -4,7 +4,8 @@ Durant mon stage, j'ai ainsi voulu comprendre pourquoi et comment un jeu vidéo 
 
 	%%Définition d'un Jeu 
 	\subsubsection{Définition d'un Jeu}
-Le jeu vidéo est un média participatif en pleine extension et de plus en plus largement accepté et plébiscité par la population. \\Dans sa définition, un jeu vidéo est une extension du jeu au monde numérique en utilisant les technologies informatiques. Il s'agit donc en amont de bien comprendre ce qu'est un jeu. \\Dans son travail d’analyse, Juul\cite{Juul05} donne une synthèse qui regroupe les points partagés par toutes les définitions existantes~:
+Le jeu vidéo est un média en pleine extension et de plus en plus largement accepté et plébiscité par la population.
+\\Dans sa définition, un jeu vidéo est une extension du jeu au monde numérique en utilisant les technologies informatiques. Il s'agit donc en amont de bien comprendre ce qu'est un jeu. \\Dans son travail d’analyse, Juul\cite{Juul05} donne une synthèse qui regroupe les points partagés par toutes les définitions existantes~:
 \begin{quotation}
 A game is a rule-based formal system with a variable and quantifiable outcome, where different outcomes are assigned different values, the player exerts effort in order to influence the outcome, the player feels attached to the outcome, and the consequences of the activity are optional and negotiable. 
 \end{quotation}
@@ -23,7 +24,8 @@ Les 6 points clefs identifiés par Juul sont :
 Le jeu vidéo est un média récent qui trouve ses origines dans le début de la seconde moitié du XX$^{eme}$ siècle. D'abord majoritairement accessibles sur des bornes d'arcade, les jeux vidéo se sont progressivement répandus avec la commercialisation de consoles de salon. Selon une étude commandée par le Centre National du Cinéma et de l'image animée\href{http://www.cnc.fr}{(CNC)}, c'est près de 60\% de la population française qui jouaient à des jeux vidéo au cours de l'année 2011\cite{Cnc11}. L'âge moyen des joueurs était alors de 34,7 ans et cette population constituée de 54,1\% d'hommes fin 2011\cite{Cnc11}. L'arrivée de la console Wii et de jeux orientés plus casuals\footnote{Se dit d'une personne ne jouant à des jeux vidéo que de manière occasionnelle. Peut aussi se dire d'un jeu dont la cible sont des joueurs occasionnels.} a permi en France une meilleure diffusion du média au sein de la population, qui accepte de plus en plus de se livrer à cette activité. Contrairement à ce que l'on pourrait croire, notamment à cause de leur méconnaissance des nouvelles technologies et du jeu vidéo plus spécifiquement, les seniors se prêtent aussi volontier à la pratique de ce loisir numérique. C'est une constation que nous avons pu vérifier par nous-même lors de nos différentes sessions de tests au centre hospitalier de Lapeyronie et dans une maison de retraite à Lille, mais aussi dans différentes lectures qui seront détaillées ci-après.
 	
 		\subsubsection*{Propriétés des jeux vidéo}
-En 1984, [Driskell and Dwyer]\cite{Dris84}réalisent un premier état de l'art et trouvent que plusieurs caractéristiques des jeux vidéo peuvent influer sur les propriétés d'apprentissage et de motivation : des objectifs spécifiques, un challenge, de la fantaisie et du mystère. Ils théorisent qu'une augmentation de la motivation produit une augmentation de l'attention et mène à une meilleure mémorisation des acquis (connaissance déclarative) et une focalisation de l'attention (stratégie cognitive).\newline
+ C'est un média participatif qui implique une interaction de la part du consommateur, qui devient alors aussi acteur. Il se rapproche en cela d'un autre média qu'est le web, où l'utilisateur est aussi actif et non passif comme avec par exemple la radio, la télé ou un journal papier.
+ En 1984, [Driskell and Dwyer]\cite{Dris84}réalisent un premier état de l'art et trouvent que plusieurs caractéristiques des jeux vidéo peuvent influer sur les propriétés d'apprentissage et de motivation : des objectifs spécifiques, un challenge, de la fantaisie et du mystère. Ils théorisent qu'une augmentation de la motivation produit une augmentation de l'attention et mène à une meilleure mémorisation des acquis (connaissance déclarative) et une focalisation de l'attention (stratégie cognitive).\newline
 [Malone et Lepper, 1987] mentionnent le challenge, la curiosité, le contrôle et la fantaisie comme caractéristiques intégrantes des jeux vidéo. Selon [de Felix et Johnson , 1993], les jeux sont composés d'éléments visuels dynamiques, d'interactions, de règles et d'objectifs. Puis [Thiagarajan, 1999] affirme que le conflit, le contrôle, la terminalité et l'artifice sont les quatre éléments nécessaires d'un jeu. En 2001, [Garis and Ahlers, 01] donnent 39 descripteurs qui seront réduits à 12 pour ne garder que les paramètres statistiquement les plus significatifs pour renforcer la sensation de "game-like". \\ Finalement en 2002, [Garris et al] proposent un sous-ensemble de tous ces attributs qui seront considérés commes les paramètres de jeu clefs de l'apprentissage~:
 \begin{itemize}
 	\item la fantaisie
@@ -40,13 +42,13 @@ Les tableaux des figures \ref{game_attributes_one} et \ref{game_attributes_two} 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=\linewidth, height=\textheight ]{images/game_attributes_one}
-	\caption{Propriétés des jeux vidéo et leur définition. (1/2) \cite{Wils09}}
+	\caption{Propriétés des jeux vidéo et leur définition. (1/2)Wilson et al 09\cite{Wils09}}
 	\label{game_attributes_one}
 \end{figure}
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=\linewidth, height=\textheight ]{images/game_attributes_two}
-	\caption{Propriétés des jeux vidéo et leur définition. (2/2) \cite{Wils09}}
+	\caption{Propriétés des jeux vidéo et leur définition. (2/2)Wilson et al 09\cite{Wils09}}
 	\label{game_attributes_two}
 \end{figure}	
 
