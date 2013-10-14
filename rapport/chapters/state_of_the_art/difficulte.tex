@@ -77,12 +77,12 @@ Afin d'évaluer et de comparer les différents systèmes, ils utilisent un syst�
 Le périmètre de l'adaptation identifie le périmètre dans lequel l'adaptation est appliquée, selon le modèle \gls{mvc}. 
 \begin{itemize}
 	\item \emph{Adaptation de la présentation (la Vue)}~: l'adaptation peut donc avoir lieu au niveau de l'interface, du son ou de feedbacks envers l'utilisateur. Dans Hammer \& Planks, nous avons ainsi rendu possible la modification de ces paramètres~: ajustement du volume de la musique ou des bruitages, contraste, taille des objets, vitesse de jeu et possibilité de désactiver les éléments cosmétiques facultatifs au jeu (animation de la mer, effets visuels etc.).
-		\item  \emph{Adaptation du contrôle}~: ce niveau englobe les règles du jeu et les règles métier qui spécifient la dynamique du jeu (ou le gameplay) en réaction aux actions des joueurs. C'est dans ce niveau que l'on adaptera le niveau de difficulté du jeu. Suite à mon travail sur le jeu Hammer \& Planks, il est possible de modifier le nombre et le type d'ennemis que doit affronter le joueur, la vitesse du jeu, les propriétés des personnages (joueur ou ennemis) ou encore la fréquence des obstacles par exemple.
+		\item  \emph{Adaptation du contrôle}~: ce niveau englobe les règles du jeu et les règles métier qui spécifient la dynamique du jeu (ou le gameplay) en réaction aux actions des joueurs. C'est dans ce niveau que l'on adaptera le niveau de difficulté du jeu. Suite à mon travail sur le jeu \emph{Hammer \& Planks}, il est possible de modifier le nombre et le type d'ennemis que doit affronter le joueur, la vitesse du jeu, les propriétés des personnages (joueur ou ennemis) ou encore la fréquence des obstacles par exemple.
 		\item  \emph{Adaptation du contenu (le Modèle)} : l'adaptation à ce niveau modifie dynamiquement soit les schémas de données utilisés ou bien le contenu. L'adaptation s'efforce donc de produire un contenu lié au contexte de jeu et aux compétences des joueurs. Nous pouvons citer à titre d'exemple la génération automatique des dialogues et textes narratifs (Barry G., 2007) ou d'ambiance sonore (Chen Y et al, 2006)
 \end{itemize} 
 
 	\paragraph{Paramètres d'adaptation\\}
-Ce sont les éléments sur lesquels repose la prise de décision du processus d'adaptation. Ces éléments vont être utilisés soit comme déclencheurs de l'adaptation soit comme sources de données. Hocine et al distinguent deux types de paramètres en fonction de l'utilisateur~:
+Ce sont les éléments sur lesquels repose la prise de décision du processus d'adaptation. Ces éléments vont être utilisés soit comme déclencheurs de l'adaptation soit comme sources de données. Hocine et al\cite{Hoci11} distinguent deux types de paramètres en fonction de l'utilisateur~:
 \begin{itemize}
 	\item \emph{Modèle utilisateur} : ensemble de variables et métriques décrivant les caractéristiques de l’utilisateur dans le système. Ces caractéristiques peuvent être des données représentant les préférences de l’utilisateur, son état attentionnel, ses émotions et/ou ses compétences. Ces données sont stockées dans le profil de l’utilisateur qui sera utilisé comme paramètre de processus d’adaptation.
 	\item \emph{Paramètre non-utilisateur ou variable système }: ce paramètre représente les variables propres au système et qui ne dépendent pas du modèle utilisateur. A titre d'exemple, nous pouvons citer les paramètres liés à la configuration matérielle et logicielle du système hôte.
@@ -109,16 +109,16 @@ Durant son travail sur la difficulté dans les jeux vidéo, Levieux se propose d
 	\end{itemize}
 	\item le scripting dynamique, qui calcule des préférences à partir de règles écrites par le designer~:
 	\begin{itemize}
-		\item jeux d’aventure : Neverwinter Nights - Bioware
-		\item \gls{rts} : Wargus [Spronck 05], [Spronck 06], [Spronck 08], [Timuri 07], [Ludwig 07]
+		\item jeux d’aventure : \emph{Neverwinter Nights} - Bioware
+		\item \gls{rts} : \emph{Wargus} [Spronck 05], [Spronck 06], [Spronck 08], [Timuri 07], [Ludwig 07]
 	\end{itemize}
 		\item évolution génétique et réseau de neurones (l’un et/ou l’autre)~:
 	\begin{itemize}
 		\item jeux d’actions [Demasi 05], [Spronck 02]
 		\item \gls{rts} : [Ponsen 05], [Agogino 00]
 		\item \gls{fps} : [Cole 04], [Thurau 03]
-		\item jeux de sport : Fifa 99 -EA Games [Chan 04]
-		\item puzzle : Tetris - Nintendo [Bohm 05]
+		\item jeux de sport : \emph{Fifa 99} -EA Games [Chan 04]
+		\item puzzle : \emph{Tetris} - Nintendo [Bohm 05]
 		\item réalité virtuelle : [Yannakakis 09], [Yannakakis 07]
 	\end{itemize}
 		\item algorithmes de champs potentiels pour comportements stratégiques dans les \gls{fps} [Thurau 04]
@@ -126,4 +126,4 @@ Durant son travail sur la difficulté dans les jeux vidéo, Levieux se propose d
 \end{enumerate}
 
 	\subsubsection*{Comparaison avec les besoins de NaturalPad}
-Dans leur état de l'art des techniques d'adaptation dans les jeux vidéo, [Hocine et al] définissent la différence entre les systèmes adaptables et les systèmes auto-adaptatifs. Leur étude, comme celle de Levieux, se concentre cependant sur les systèmes dont l'ajustement est automatique. Or, comme nous l'avons déjà dit, nos besoins et propositions sont plutôt de proposer des jeux mettant en place un système d'ajustement manuel. Un tel système permet à chaque thérapeute amené à utiliser un jeu sérieux pour la santé de notre environnement, d'adapter le jeu aux besoins thérapeutiques dont il aura précisément besoin selon le contexte : préférences thérapeutiques, pathologies et spécificités du patient ou encore état de santé ou de forme de celui-ci pour ne citer que quelques exemples.
+Dans leur état de l'art des techniques d'adaptation dans les jeux vidéo, Hocine et al\cite{Hoci11} définissent la différence entre les systèmes adaptables et les systèmes auto-adaptatifs. Leur étude, comme celle de Levieux, se concentre cependant sur les systèmes dont l'ajustement est automatique. Or, comme nous l'avons déjà dit, nos besoins et propositions sont plutôt de proposer des jeux mettant en place un système d'ajustement manuel. Un tel système permet à chaque thérapeute amené à utiliser un jeu sérieux pour la santé de notre environnement, d'adapter le jeu aux besoins thérapeutiques dont il aura précisément besoin selon le contexte : préférences thérapeutiques, pathologies et spécificités du patient ou encore état de santé ou de forme de celui-ci pour ne citer que quelques exemples.
