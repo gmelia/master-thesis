@@ -1,0 +1,140 @@
+\documentclass[french, 12pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[T1]{fontenc}
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+
+%PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage[colorlinks=true]{hyperref} % permet l'utilisation d'hyperliens, et active leur coloration ( a definir)
+\usepackage{pdfpages} %% permet d'importe des pages pdf
+\usepackage[francais]{babel}
+
+%GLOSSAIRE
+%\usepackage{glossary}
+\usepackage[toc]{glossaries}
+\makeglossaries
+\input{glossaire}
+
+
+%COULEURS
+\usepackage{color} % permet de définir des couleurs pour les utiliser localement
+\definecolor{orange}{rgb}{0.8, 0.4, 0.1}
+\definecolor{vert}{rgb}{0.27, 0.57, 0.13}
+\definecolor{marron}{rgb}{0.6, 0.2, 0.13}
+
+% BIBLIOGRAPHY DEFINITIONS
+\bibliographystyle{plain}
+
+
+% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+
+% table of contents APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+
+\title{Résumé de stage - M2 Informatique}
+\author{Mélia Geoffrey}
+
+\date{} % Activate to display a given date or no date (if empty), otherwise the current date is printed 
+
+\ifpdf
+	\pdfinfo
+	{
+		/Author (Geoffrey MELIA)
+		/Title (Master thesis)
+		/Subject (Difficulty adaptation in rehabilitation SG)
+		/Keywords (serious games ; e-health ; rehabilitation ; difficulty adaptation ; player behavior ; conception)
+		/CreationDate (\today)
+	}
+\fi
+
+\begin{document}
+\maketitle
+
+\begin{picture}(0,0)
+	\put(-30,-550){\includegraphics[scale=0.8]{images/logo_um2.png}}
+	\put(280,-570){\includegraphics[scale=0.6]{images/logo_naturalpad.png}}
+	
+	\put(-30,-120){\textsc{\LARGE{Vers une méthode de conception de jeux}}}
+	\put(10,-150){\textsc{\LARGE{vidéo sérieux à but thérapeutique}}}
+	\put(100,-180){\textsc{\large{et adaptation de la difficulté}}}
+	
+	\put(-30,-360){\textsc{\large{tuteurs universitaires : Vincent Boudet \& Nancy Rodriguez}}}
+	\put(-30,-400){\textsc{\large{effectué chez la société NaturalPad}}}
+	\put(-30,-420){\textsc{\large{sous la direction de Antoine Seilles}}}
+\end{picture}
+
+\newpage 
+
+\definecolor{red}{rgb}{0,0,0}
+\tableofcontents
+
+\newpage
+\definecolor{red}{rgb}{1,0,0}
+
+%NP- Jeux et e-santé + exposer clairement quelle était la question de recherche
+\section{Introduction et contexte}
+	\subsection{Généralités}
+Ce stage réalisé dans le cadre de ma 2ème année de Master Informatique fut l'occasion de poursuivre mon travail dans le domaine de la santé débuté durant mon TER\footnote{Travail d'Étude et de Recherche}. Succinctement, ce dernier consistait en l'expérimentation de technologies informatiques pour l'évaluation des capacités motrices de patients hémiplégiques. \\
+L'objectif de recherche de ce stage était de proposer une méthode ou des outils pour la conception de jeux sérieux pour la santé dans le domaine de la rééducation motrice. \\
+NaturalPad est une jeune startup basée dans la région de Montpellier. Elle est spécialisée dans les technologies appliquées à la santé et développe notamment des jeux vidéos à but thérapeutique pour la rééducation fonctionnelle. Ces jeux utilisent des technologies de capture du mouvement grand public comme le Kinect de Microsoft ou la Wii Board de Nintendo. \\
+
+\subsection{Contexte et besoins}
+Lors de mon arrivée au sein de NaturalPad, il existait déjà une version du jeu Hammer \& Planks, outil dans lequel devait s'insérer la seconde partie de mon travail. Hammer \& Planks est le premier jeu sérieux pour la santé de NaturalPad. Il a été conçu en collaboration avec une ergothérapeute,dans le but de permettre aux personnes hémiplégiques de retrouver leur faculté d'équilibre. Présenté fin 2012, le jeu était alors surtout orienté grand public. Ma première mission fut de l'adapter pour une utilisation paramétrable dans un contexte thérapeutique. En effet, une utilisation thérapeutique implique d'ajuster les différents paramètres en fonction des capacités et des besoins du patient.\\
+Les échanges avec les professionnels de la santé ont été au cœur de ce stage. La compréhension des besoins et des contraintes médicales étant primordiales pour proposer un produit adapté, je me suis naturellement tourné vers les thérapeutes et soignants pour acquérir les connaissances et le background qui me manquaient. Il m'est par ailleurs rapidement apparu qu'on ne pouvait répondre aux différents besoins thérapeutiques explicités par les soignants avec un seul jeu vidéo, même paramétrable. C'est pourquoi je me suis aussi concentré sur l'aspect de conception avec les thérapeutes. 
+
+\subsection{Orientation du travail de stage}
+Rappelons que la société NaturalPad propose comme outil une plateforme web permettant d'accéder à des jeux sérieux, et de les paramétrer directement depuis celle-ci. Hammer \& Planks constitue ainsi le premier jeu accessible depuis cette plateforme et, bien que servant d'exemple des possibilités d'un jeu vidéo pour la santé, il est amené à être rejoint par d'autres serious games. C'est dans cette optique que mon travail durant ce stage consistait aussi en l'expérimentation d'une méthode de conception de serious games pour la santé. Cela a pour objectif de proposer une solution appropriée aux différents besoins et contraintes de chaque situation. Ces derniers peuvent correspondre aux objectifs thérapeutiques, à la pathologie du patient, ses capacités, son âge, sa maitrise des nouvelles technologies ou son aisance avec les jeux vidéo par exemple. Ce travail s'inscrit donc  dans le but d'adapter le jeu vidéo aux besoins thérapeutiques, et est complémentaire à une adaptation des paramètres de jeux, qu'elle soit manuelle ou automatique. Pour cela, nous définissons le sujet de ce stage comme suit : \\
+\emph{Vers la proposition d'une méthode de conception de jeux vidéo sérieux à but thérapeutique, et adaptation de la difficulté.}
+	
+
+
+%\newpage
+%\section{Problématique}
+%\input{chapters/problematique}
+%
+%\newpage
+%\section{Background}
+%\input{chapters/background}
+%
+%
+%	\newpage
+%\section{Propositions et réalisations}
+%\input{chapters/proposition}
+%
+%\input{chapters/realisation}
+%
+%\newpage
+%\section{Perspectives}
+%\input{chapters/perspectives}
+%
+%\newpage
+%\section{Conclusion}
+%\input{chapters/conclusion}
+%
+%\newpage
+%\bibliography{rapport}
+
+\end{document}
